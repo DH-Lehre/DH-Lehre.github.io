@@ -1,0 +1,3305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c2dce8d408ee7eaa3c5921002e84d7c8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c2dce8d408ee7eaa3c5921002e84d7c8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c2dce8d408ee7eaa3c5921002e84d7c8 = L.map(
+                "map_c2dce8d408ee7eaa3c5921002e84d7c8",
+                {
+                    center: [50.0, 50.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0f91412a543d02a3ca52949676a635e7 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0f91412a543d02a3ca52949676a635e7.addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+            var circle_marker_02fe56944ed0d3e166fc4a6746ff1508 = L.circleMarker(
+                [32.6525, 51.675],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_f02285c237a1436459513c0077c7379c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_c5e7197bbd58b838c9a3585593be85e5 = $(`<div id="html_c5e7197bbd58b838c9a3585593be85e5" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Isfahan</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Hecatompolis, Isbahan, Isfahan, Ispahan, Jsfahan, Jſpahan, Sipahan, Stadt</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 418863 | 16 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>D Je Stadt [Isfahan] betreffend / welche Joſaphat Bar- barus Spaham . Contarenus Spaa</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>ſoll vor Alten Zeiten wegen des groſſen Vmbſchweiffes den Namen [Hecatompolis] gehabt haben . Kurtz vor Tamerlani Zeiten iſt ſie Sipahan</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Hecatompolis gehabt haben . Kurtz vor Tamerlani Zeiten iſt ſie [Sipahan] genant worden / theils wegen vielheit des Volckes / theils</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>/ verſamlet vnd in Ordnung gebracht werden muͤſſen . Dann [Sipahan] iſt der pluralis vom Vßbekiſchen vnd alten Perſianiſchen Worte Sipæ</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>dem Ta- merlano hat es per Metatheſin literarum den Namen [Jſpahan] be- kommen . Der Arabiſche Hiſtoricus Ahmed bin Arebſcha ,</i></li></ul>   <small><i>… und 11 weitere</i></small> </div> </div>`)[0];
+                popup_f02285c237a1436459513c0077c7379c.setContent(html_c5e7197bbd58b838c9a3585593be85e5);
+            
+        
+
+        circle_marker_02fe56944ed0d3e166fc4a6746ff1508.bindPopup(popup_f02285c237a1436459513c0077c7379c)
+        ;
+
+        
+    
+    
+            circle_marker_02fe56944ed0d3e166fc4a6746ff1508.bindTooltip(
+                `<div>
+                     <b>Isfahan</b> (16×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d42b972ef8a322e6536b7e3e4682b36b = L.circleMarker(
+                [38.25, 48.3],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_397b8b48bd38515f0a9fdb8e130d9692 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_cb10544417090a70434d666ec4614917 = $(`<div id="html_cb10544417090a70434d666ec4614917" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Ardabil</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Ar-  debil, Ardebil, Ardebili</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 143083 | 15 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>fuͤr einen Dolmetſch ange- nommen . Als Er aber nach [Ardebil] kam / begunten wir zu mercken das Farruch wahr geredet</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Ankunfft / nemlich eines Bauren Sohn / in Sserab zwiſchen [Ardebil] vnd Tabris gelegen . Hatte aber durch ſeine Hertz- haff-</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>einen newen Mehemandar oder Wegweiſer / ſo vom Chan zu [Ardebil] Ein Ardevi- li ſcher Me- hemandar kumpt vns entgegen .</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>zu waͤrmen . Jn dieſer Nacht wurde vnſer Quartiermeiſter nach [Ardebil] vmb allda Quartir zumachen vorauß geſchickt .</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>ein Dorff Tzabedar , Tzabedar . 2. kleine Meilen von [Ardebil] , in welchem wir einkehreten / auch folgen- den als</i></li></ul>   <small><i>… und 10 weitere</i></small> </div> </div>`)[0];
+                popup_397b8b48bd38515f0a9fdb8e130d9692.setContent(html_cb10544417090a70434d666ec4614917);
+            
+        
+
+        circle_marker_d42b972ef8a322e6536b7e3e4682b36b.bindPopup(popup_397b8b48bd38515f0a9fdb8e130d9692)
+        ;
+
+        
+    
+    
+            circle_marker_d42b972ef8a322e6536b7e3e4682b36b.bindTooltip(
+                `<div>
+                     <b>Ardabil</b> (15×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f600edd549c636850239285741fcb2fa = L.circleMarker(
+                [55.750555555, 37.6175],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_cd9eff46a7ae36fffa9fbf246143b674 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_569ed62cb2fb998926f55ab05b1db96f = $(`<div id="html_569ed62cb2fb998926f55ab05b1db96f" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Moskau</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Mußcow</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 524901 | 14 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Die andere Reiſe nach [Mußcow] vnd Perſien .</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Jhre Fuͤrſtl : Gn. vernommen / daß der Großfuͤrſt in [Mußcow] den Durchzug durch ſein Reich in Perſien bewilliget / haben</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Auffbruch auß [Mußcow] nach Perſien den 30. Junij 1636 .</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>die Priſtaffen ein- gehaͤndiget wurde / geſchahe vnſer Auffbruch auß [Mußcow] den 30. Junij . Dann nachdem wir denſel- ben Tag</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>aber weigerten ſich / vnd weil Er vor dieſem in [Mußcow] / wie obgedacht / vnſer etliche auff der Falcken-Jagt wol</i></li></ul>   <small><i>… und 9 weitere</i></small> </div> </div>`)[0];
+                popup_cd9eff46a7ae36fffa9fbf246143b674.setContent(html_569ed62cb2fb998926f55ab05b1db96f);
+            
+        
+
+        circle_marker_f600edd549c636850239285741fcb2fa.bindPopup(popup_cd9eff46a7ae36fffa9fbf246143b674)
+        ;
+
+        
+    
+    
+            circle_marker_f600edd549c636850239285741fcb2fa.bindTooltip(
+                `<div>
+                     <b>Moskau</b> (14×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4d2938faacdac0008a26f59e52e73f65 = L.circleMarker(
+                [32.0, 53.0],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_9c77389022b30ebc8c4e2d6d7cdd17f1 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_3b1b28a69fa6fbd918c65725f9aed183 = $(`<div id="html_3b1b28a69fa6fbd918c65725f9aed183" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Iran</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Perſien</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 130758 | 10 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Die andere Reiſe nach Mußcow vnd [Perſien] .</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>der Großfuͤrſt in Mußcow den Durchzug durch ſein Reich in [Perſien] bewilliget / haben Sie jhr hohes intent ferner zu verfolgen</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Præparatoria zur andern Legation , nemblich an den Koͤnig in [Perſien] / gemachet / vnd die fernere Reiſe auffs ſchleunigſte vorgenommen</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Schiffer vnd Botsleute ſo mit in [Perſien] gezogen .</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Leuten / auff vnſere Ordre abgelaſſen auß Muß- cow in [Perſien] an den Perſiſchen Schach Sofi , wegen der Abrede den</i></li></ul>   <small><i>… und 5 weitere</i></small> </div> </div>`)[0];
+                popup_9c77389022b30ebc8c4e2d6d7cdd17f1.setContent(html_3b1b28a69fa6fbd918c65725f9aed183);
+            
+        
+
+        circle_marker_4d2938faacdac0008a26f59e52e73f65.bindPopup(popup_9c77389022b30ebc8c4e2d6d7cdd17f1)
+        ;
+
+        
+    
+    
+            circle_marker_4d2938faacdac0008a26f59e52e73f65.bindTooltip(
+                `<div>
+                     <b>Iran</b> (10×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bbb0f8ed7d5c15a1e968dbbe99db5514 = L.circleMarker(
+                [59.437222222, 24.745],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_639709102c643027c4a5efa35ea8983a = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_83650d258bf14bd40b9c934e2eeb02e5 = $(`<div id="html_83650d258bf14bd40b9c934e2eeb02e5" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Tallinn</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Reval</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 588409 | 8 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>/ von Freyberg auß Meißen . Berend Koch / von [Reval] auß Lieffland .</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>/ von Schleßwig . Muſicanten Junge Joſt Adrian / von [Reval] . Kellerjunge Chriſtoffer Pudt / auß Hamburg . Mundſchencken junge</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>/ Jn dem von ſolchen gelobten vnd verehreten Geldern zu [Reval] ein Arm : vnd frommes Kind davon jhre Außgeſtewre zur</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>vns / vnd als ſie vernahm / daß wir nach [Reval] wolten / folgete ſie vns nach . Auff den Abend</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Tagerordt vor Ancker / vnd iſt den andern Tag vor [Reval] ſicher ankommen . Vnſer Schiffer vnd Ste- werman aber /</i></li></ul>   <small><i>… und 3 weitere</i></small> </div> </div>`)[0];
+                popup_639709102c643027c4a5efa35ea8983a.setContent(html_83650d258bf14bd40b9c934e2eeb02e5);
+            
+        
+
+        circle_marker_bbb0f8ed7d5c15a1e968dbbe99db5514.bindPopup(popup_639709102c643027c4a5efa35ea8983a)
+        ;
+
+        
+    
+    
+            circle_marker_bbb0f8ed7d5c15a1e968dbbe99db5514.bindTooltip(
+                `<div>
+                     <b>Tallinn</b> (8×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b4a4f724eb0f9731a41c7b47e03117cd = L.circleMarker(
+                [38.073888888, 46.296111111],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_c61ca13f592be12d7f4c459f428ee465 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_89531cf5da8bb8becb9c090153988a2c = $(`<div id="html_89531cf5da8bb8becb9c090153988a2c" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Täbris</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Abasabath, Tabris, Tabrisabath, Tauris, Tzabedar</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 113646 | 6 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Eine halbe Meile nach dieſer Bruͤcken liegt ein Dorff [Tzabedar] , Tzabedar . 2. kleine Meilen von Ardebil , in</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>1000 . Doͤrf- fer / vmb den Staͤdten Caswin vnd [Tauris] uͤber 2000 . Haͤuſer vnd 500. Kirchen . Er bat</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Mehedi zu Ehren / aber viel kleiner als dieſe zu [Tabris] auffſetzen / vnd den Marmor / welcher als Kreide weis</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Jen- Tabrisabath ſeit des Stroms Senderût liegt eine andere Vorſtadt [Tabrisabath] , ſonſt auch Abasabath genant / weil Schach Abas ſelbige</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Stroms Senderût liegt eine andere Vorſtadt Tabrisabath , ſonſt auch [Abasabath] genant / weil Schach Abas ſelbige Voͤlcker von h aſſenabath</i></li></ul>   <small><i>… und 1 weitere</i></small> </div> </div>`)[0];
+                popup_c61ca13f592be12d7f4c459f428ee465.setContent(html_89531cf5da8bb8becb9c090153988a2c);
+            
+        
+
+        circle_marker_b4a4f724eb0f9731a41c7b47e03117cd.bindPopup(popup_c61ca13f592be12d7f4c459f428ee465)
+        ;
+
+        
+    
+    
+            circle_marker_b4a4f724eb0f9731a41c7b47e03117cd.bindTooltip(
+                `<div>
+                     <b>Täbris</b> (6×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8ad8a4ba110c82478c33b4bbd319e804 = L.circleMarker(
+                [51.1649, 13.4859],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_dde2b7ae3bd6db1b51eaebf045bab95b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_188a8a12c571fa904c7a21a35e25f7be = $(`<div id="html_188a8a12c571fa904c7a21a35e25f7be" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Meißen</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Meißen</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2872155 | 5 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Johan Chriſtoff von Vchteritz / von Litzena bey Leipzig auß [Meißen] / Cammerherꝛ . Hartmannus Gramannus , von Stadt Jlmen auß</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Herꝛ Newe Perſianiſche H. Salomon Petri / von Penick auß [Meißen] / Hoffprediger . Hans Arpenbeke / von Dorpat auß Lieffland</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Patritius auß Nuͤrnberg . Hans Voigt / von Freyberg auß [Meißen] . Berend Koch / von Reval auß Lieffland .</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Wolgaſt auß Pommern . Elias Galle / von Hertzberg auß [Meißen] . Hans Michel / von kleinen Peßna bey Leipzig .</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>auß Riga / vnd Hans Carl Boͤhmer von Pirn auß [Meißen] . Raths vnd Secretarij Diener Matthias Hebenerius , von Bribor</i></li></ul>    </div> </div>`)[0];
+                popup_dde2b7ae3bd6db1b51eaebf045bab95b.setContent(html_188a8a12c571fa904c7a21a35e25f7be);
+            
+        
+
+        circle_marker_8ad8a4ba110c82478c33b4bbd319e804.bindPopup(popup_dde2b7ae3bd6db1b51eaebf045bab95b)
+        ;
+
+        
+    
+    
+            circle_marker_8ad8a4ba110c82478c33b4bbd319e804.bindTooltip(
+                `<div>
+                     <b>Meißen</b> (5×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_14480b85b7c10e193fabdc2320bb9d02 = L.circleMarker(
+                [61.0, 15.0],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_fb7140780118d0f7b4c75172d2bf40b2 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_87715cfbb2ea58716cf0073ee509b37d = $(`<div id="html_87715cfbb2ea58716cf0073ee509b37d" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Schweden</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Schweden</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2661886 | 5 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Lackeyen . Steen Jenſon / von Marckeroͤhr auß [Schweden] . Johan Kohman / auß der Stadt Hamburg . Hans</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Bribor auß Mehren / vnd Marten Larſon von Weſteras auß [Schweden] . Stallmeiſters Diener Jochim Binger von Briell auß Meck- lenburg</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Hamburg . Mattieß Manſon / Boetsman vnnd Segelmacher / auß [Schweden] buͤrtig . Peter Wede / Claus Claußen / Wilhelm Runip</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>. Cornelius Joſten / Schiffs zimmerman / auß Schmaland in [Schweden] . Michel Gloeck / Schiffs-junge / auß Luͤbeck . Dieſe</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>man ſolte ferner zur See / oder uͤber Land durch [Schweden] gehen / vnd endlich vmb vielerley Vrſachen willen geſchloſſen /</i></li></ul>    </div> </div>`)[0];
+                popup_fb7140780118d0f7b4c75172d2bf40b2.setContent(html_87715cfbb2ea58716cf0073ee509b37d);
+            
+        
+
+        circle_marker_14480b85b7c10e193fabdc2320bb9d02.bindPopup(popup_fb7140780118d0f7b4c75172d2bf40b2)
+        ;
+
+        
+    
+    
+            circle_marker_14480b85b7c10e193fabdc2320bb9d02.bindTooltip(
+                `<div>
+                     <b>Schweden</b> (5×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ddd546f912ee448ce9c250a47be1417c = L.circleMarker(
+                [52.3624, 36.2223],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_fe8a997e4d0ee43f7d7405fe4c1c8b68 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_bde141d2911c96acd4f4339303607e0a = $(`<div id="html_bde141d2911c96acd4f4339303607e0a" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Oka</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Occa</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 516091 | 5 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Confluentz der Muska vnd [Occa] .</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>3. W. hinter Colomna faͤlt der Bach Muska in die [Occa] , ſo ein breiter tieffer Strom iſt / vnd koͤmpt</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Lande aber 100. Deutſche Meilen gerechnet / lieget an der [Occa] zur rechten Hand am hohen Lande / iſt mit einer</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Confluentz der Wolga vnd [Occa] .</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>vmbgrieffen . Vor der Stadt ver- einiget ſich mit der [Occa] der beruͤmbte Fluß Wolga , von den Alten Scribenten Rha</i></li></ul>    </div> </div>`)[0];
+                popup_fe8a997e4d0ee43f7d7405fe4c1c8b68.setContent(html_bde141d2911c96acd4f4339303607e0a);
+            
+        
+
+        circle_marker_ddd546f912ee448ce9c250a47be1417c.bindPopup(popup_fe8a997e4d0ee43f7d7405fe4c1c8b68)
+        ;
+
+        
+    
+    
+            circle_marker_ddd546f912ee448ce9c250a47be1417c.bindTooltip(
+                `<div>
+                     <b>Oka</b> (5×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_73296df0a8b0c3c07de57b3fef70d92e = L.circleMarker(
+                [35.955277777, 52.109166666],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_6507f990494045ce5a0353b73852f567 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_9e04f0f0495377f918ab66653ce9877b = $(`<div id="html_9e04f0f0495377f918ab66653ce9877b" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Damavand</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Dema-  wend, Demawend, Meſanderan</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 138041 | 5 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>ſehen . Nemblich nach S. vnd S. W. das Gebirge [Demawend] , vnd nach N. O. gegen Maſanderan den Berg Jeilak</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>/ Sen- derut , vorbey / koͤmpt auß dem Gebirge [Demawend] , zertheilet ſich in vnterſchiedliche kleine Baͤche / welche ſie</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Waſſer Abkuren , ſo auff der andern ſeiten des Berges [Dema-  wend] fleuſt / durch den Berg in das Rivir Senderút zuleiten</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>4. gr. dann ſie muͤſſen vom Gebirge Jeilak perjan vnd [Meſanderan] dahin verfuͤhret werden .</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>4. gr. dann ſie muͤſſen vom Gebirge Jeilak perjan vnd [Meſanderan] dahin verfuͤhret werden .</i></li></ul>    </div> </div>`)[0];
+                popup_6507f990494045ce5a0353b73852f567.setContent(html_9e04f0f0495377f918ab66653ce9877b);
+            
+        
+
+        circle_marker_73296df0a8b0c3c07de57b3fef70d92e.bindPopup(popup_6507f990494045ce5a0353b73852f567)
+        ;
+
+        
+    
+    
+            circle_marker_73296df0a8b0c3c07de57b3fef70d92e.bindTooltip(
+                `<div>
+                     <b>Damavand</b> (5×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d538ed47e2c2dbc963b60d9b5a4cd0ac = L.circleMarker(
+                [32.3034, 52.8675],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_0127d5ba8997b59f73814efba5f9decb = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_fc233aa7bc93158a42ca8be26b08922f = $(`<div id="html_fc233aa7bc93158a42ca8be26b08922f" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Zayandeh Rud</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Rivire, Sen-  derut, Sende, Senderút, Senderût</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 8377286 | 5 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>S. W. vnd S. ſeiten ein ziemlich groß Rivir / [Sen-  derut] , vorbey / koͤmpt auß dem Gebirge Demawend , zertheilet</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>in den Hoͤſſen viel gegrabene Waſſerbrunnen haben . Vom ſelbigen [Rivire] wird alsbald uͤber der Stadt ein Arm ab vnd in</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Dema- wend fleuſt / durch den Berg in das Rivir [Senderút] zuleiten / hat taͤglich 800. in 1000 . Mann abwechſelsweiſe</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>in der mitten wird das Waſſer ſo auß dem Rivir [Sende] - rût durch einen vnter der Erden gelegten Canal ſich</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Calenter Seferasbek einbringen muͤſten . Jen- Tabrisabath ſeit des Stroms [Senderût] liegt eine andere Vorſtadt Tabrisabath , ſonſt auch Abasabath genant</i></li></ul>    </div> </div>`)[0];
+                popup_0127d5ba8997b59f73814efba5f9decb.setContent(html_fc233aa7bc93158a42ca8be26b08922f);
+            
+        
+
+        circle_marker_d538ed47e2c2dbc963b60d9b5a4cd0ac.bindPopup(popup_0127d5ba8997b59f73814efba5f9decb)
+        ;
+
+        
+    
+    
+            circle_marker_d538ed47e2c2dbc963b60d9b5a4cd0ac.bindTooltip(
+                `<div>
+                     <b>Zayandeh Rud</b> (5×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bbe16fc69d354ddeeb203378372677b3 = L.circleMarker(
+                [57.862234, 25.967155],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_d2ebc3fc5ed3197f2e21f168e9ee2f3b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_c9e3ed215084b7c7c478b51da2402831 = $(`<div id="html_c9e3ed215084b7c7c478b51da2402831" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Livland</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Lieffland</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 457850 | 4 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>wie folget : Herman von Staden / von Riga auß [Lieffland] / Marſchall . Die Namen der Voͤlcker des Comi- tats</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Meißen / Hoffprediger . Hans Arpenbeke / von Dorpat auß [Lieffland] / Ruſſiſcher Translator . Heinrich Krebs / auß Hamburg .</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Freyberg auß Meißen . Berend Koch / von Reval auß [Lieffland] .</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>vnd kamen den 24 dieſes auch gluͤck- lich uͤber in [Lieffland] .</i></li></ul>    </div> </div>`)[0];
+                popup_d2ebc3fc5ed3197f2e21f168e9ee2f3b.setContent(html_c9e3ed215084b7c7c478b51da2402831);
+            
+        
+
+        circle_marker_bbe16fc69d354ddeeb203378372677b3.bindPopup(popup_d2ebc3fc5ed3197f2e21f168e9ee2f3b)
+        ;
+
+        
+    
+    
+            circle_marker_bbe16fc69d354ddeeb203378372677b3.bindTooltip(
+                `<div>
+                     <b>Livland</b> (4×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1674b25df5f80b83da087714320be7d4 = L.circleMarker(
+                [51.3406321, 12.3747329],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_092ea673f78740ec6882de1a78160353 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_4ced15827b87029643673f0877a306a6 = $(`<div id="html_4ced15827b87029643673f0877a306a6" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Leipzig</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Leipzig</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2879139 | 4 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Stallmeiſter . Johan Chriſtoff von Vchteritz / von Litzena bey [Leipzig] auß Meißen / Cammerherꝛ . Hartmannus Gramannus , von Stadt</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>auß Meißen . Hans Michel / von kleinen Peßna bey [Leipzig] . Sigfried Deſebruch / von Haſelaw auß Holſtein .</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Stettin auß Pommern / Kuͤchenſchreiber . Simon Kretzſchmer / auß [Leipzig] / Silberdiener . Dieterich Nieman / von Boxtehude / Conterfeyer</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Einer vnter vns ſchickte vom Schiffe zu ruͤcke nach [Leipzig] an ſeinen guten Freund P. W. J. Cand : folgendes</i></li></ul>    </div> </div>`)[0];
+                popup_092ea673f78740ec6882de1a78160353.setContent(html_4ced15827b87029643673f0877a306a6);
+            
+        
+
+        circle_marker_1674b25df5f80b83da087714320be7d4.bindPopup(popup_092ea673f78740ec6882de1a78160353)
+        ;
+
+        
+    
+    
+            circle_marker_1674b25df5f80b83da087714320be7d4.bindTooltip(
+                `<div>
+                     <b>Leipzig</b> (4×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b8af9fd75e18916f902c79f5f3d5937d = L.circleMarker(
+                [54.29443, 18.15312],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_65e8746179b89d2685c6c0f023e06eaa = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_fadbb74c5da3021c49b30020e6d06e47 = $(`<div id="html_fadbb74c5da3021c49b30020e6d06e47" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Pommern</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Pommern</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 3088388 | 4 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Leib -Medicus . Heinrich Schwartz / von Gryphswalde / auß [Pommern] / Hoffemeiſter . Hoff-Junckern vnd Truckſeſſen . Hieronymus Jmhoff /</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Andere Pagen . Thomas Glantz / von Wolgaſt auß [Pommern] . Elias Galle / von Hertzberg auß Meißen . Hans</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>/ Feldſcherer . Jacob Scheve / von Newen Stettin auß [Pommern] / Kuͤchenſchreiber . Simon Kretzſchmer / auß Leipzig / Silberdiener</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>auß Polen . Stalljunge Hans Pudenberg / von Wolgaſt auß [Pommern] . Hundejunge Johan Janſon / ein Hollaͤnder . Schif- Reiſe</i></li></ul>    </div> </div>`)[0];
+                popup_65e8746179b89d2685c6c0f023e06eaa.setContent(html_fadbb74c5da3021c49b30020e6d06e47);
+            
+        
+
+        circle_marker_b8af9fd75e18916f902c79f5f3d5937d.bindPopup(popup_65e8746179b89d2685c6c0f023e06eaa)
+        ;
+
+        
+    
+    
+            circle_marker_b8af9fd75e18916f902c79f5f3d5937d.bindTooltip(
+                `<div>
+                     <b>Pommern</b> (4×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_540ce9271b9a1152b909c52cff1e7fd4 = L.circleMarker(
+                [56.326944444, 44.0075],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_19a35616cdf27a1dda6a5ecdb986cba0 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_158f47a062ac9ed108659a06722b934b = $(`<div id="html_158f47a062ac9ed108659a06722b934b" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Nischni Nowgorod</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Nieſen, Nieſen                                         Newgarden</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 520555 | 4 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>vnd nach Kaſi- mowa vnd nach Murama / vnd nach [Nieſen                                         Newgarden] / vnd nach Caßan vnd nach Aſtrakan / vnſern Bojaren</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>vnd nach Kaſi- mowa vnd nach Murama / vnd nach [Nieſen] Newgarden / vnd nach Caßan vnd nach Aſtrakan / vnſern</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Mann / fuͤr dieſelbe zu vermehrung iſt jhnen zugelaſſen zu [Nieſen] / oder zu Caßan oder zu Aſtrakan zu erfuͤllung wegen</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>an Ruſ- ſen oder Deutſchen freywilligen Leuten . Auch zu [Nieſen] vergoͤnnet / zu hewren oder anzunehmen / 2. Steuerleute /</i></li></ul>    </div> </div>`)[0];
+                popup_19a35616cdf27a1dda6a5ecdb986cba0.setContent(html_158f47a062ac9ed108659a06722b934b);
+            
+        
+
+        circle_marker_540ce9271b9a1152b909c52cff1e7fd4.bindPopup(popup_19a35616cdf27a1dda6a5ecdb986cba0)
+        ;
+
+        
+    
+    
+            circle_marker_540ce9271b9a1152b909c52cff1e7fd4.bindTooltip(
+                `<div>
+                     <b>Nischni Nowgorod</b> (4×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_74a3cde44c8ec1e978c90231a7508a49 = L.circleMarker(
+                [46.35, 48.035],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_f0b6ed6a54dbdb262af0a8dbeaca1438 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_035e61030e568e22912e70fb68062131 = $(`<div id="html_035e61030e568e22912e70fb68062131" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Astrachan</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Aſtracha, Aſtrachan</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 580497 | 4 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Priſtaff Namens Rodiwon Matfeowitz zugeordnet / welcher mit vns biß [Aſtracha] n gehen muſte .</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Saltz vnd eingeſaltzenen Fi- ſchen beladen / kamen meiſt von [Aſtrachan] vnd namen jhren Weg nach Mußcow .</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>groſſe Struſen vnd Boͤte / ſo auff der Wolga nach [Aſtrachan] wollen / nemen die Zeit in acht / vnd machen</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>heꝛauff zu fah- ren pflegen . Schute / ſo von [Aſtrachan] kam / auff welchen 200 . Mann Arbeits- Leute waren</i></li></ul>    </div> </div>`)[0];
+                popup_f0b6ed6a54dbdb262af0a8dbeaca1438.setContent(html_035e61030e568e22912e70fb68062131);
+            
+        
+
+        circle_marker_74a3cde44c8ec1e978c90231a7508a49.bindPopup(popup_f0b6ed6a54dbdb262af0a8dbeaca1438)
+        ;
+
+        
+    
+    
+            circle_marker_74a3cde44c8ec1e978c90231a7508a49.bindTooltip(
+                `<div>
+                     <b>Astrachan</b> (4×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b2b9bf89335521c26f0168822e7c6c7 = L.circleMarker(
+                [55.083333333, 38.783333333],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_7befd2eb93665a949c1987a443a63e5b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_452310d25560b030e6b42499bf3a7b66 = $(`<div id="html_452310d25560b030e6b42499bf3a7b66" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Kolomna</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Colomn, Colomna</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 546230 | 4 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i> [Colomna] zu Waſſer von Mußcow 180. W.</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Auff den Abend kamen wir vor der Stadt [Colomn] a r. an . Dieſe wird von Mußcow zu Waſſer</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>3. W. hinter [Colomna] faͤlt der Bach Muska in die Occa , ſo ein</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Mittag zu einem Dorffe Omuta , r. 37. W. von [Colomna] . Allhier weil es Sontag / ſtiegen wir auffs Land</i></li></ul>    </div> </div>`)[0];
+                popup_7befd2eb93665a949c1987a443a63e5b.setContent(html_452310d25560b030e6b42499bf3a7b66);
+            
+        
+
+        circle_marker_1b2b9bf89335521c26f0168822e7c6c7.bindPopup(popup_7befd2eb93665a949c1987a443a63e5b)
+        ;
+
+        
+    
+    
+            circle_marker_1b2b9bf89335521c26f0168822e7c6c7.bindTooltip(
+                `<div>
+                     <b>Kolomna</b> (4×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cbab5de34f2257a1b95d8f92235b2658 = L.circleMarker(
+                [57.0, -5.0],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_1763853040c34b776e64dfa9e3031a1d = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_7e52076395f006ba0b4ffd50befe7920 = $(`<div id="html_7e52076395f006ba0b4ffd50befe7920" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Schottland</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Schottland</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2638360 | 3 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>auß Nuͤrnberg . Thomas Melvil / von Ebertin / auß [Schottland] . Mag. Paulus Fleming , von Hartenſtein auß dem Voigtlande</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Churland / Schuſter . Thomas Craig / von Tranent auß [Schottland] . Jochim Jke / bey New Brandenburg auß Mecklenburg .</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>. Thomas Melvils Diener Pieter Devitz / von Ebertin auß [Schottland] . Herꝛn Paſtors Diener Axel Kaeg / von der Stadt</i></li></ul>    </div> </div>`)[0];
+                popup_1763853040c34b776e64dfa9e3031a1d.setContent(html_7e52076395f006ba0b4ffd50befe7920);
+            
+        
+
+        circle_marker_cbab5de34f2257a1b95d8f92235b2658.bindPopup(popup_1763853040c34b776e64dfa9e3031a1d)
+        ;
+
+        
+    
+    
+            circle_marker_cbab5de34f2257a1b95d8f92235b2658.bindTooltip(
+                `<div>
+                     <b>Schottland</b> (3×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7aae8750939fa3c029330a7a38938e0a = L.circleMarker(
+                [65.0, 27.0],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_833255fd4d5f475e9acf5783193c622e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_eff486d42d6cef735b27015f3e1c6855 = $(`<div id="html_eff486d42d6cef735b27015f3e1c6855" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Finnland</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Finland</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 660013 | 3 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Paſtors Diener Axel Kaeg / von der Stadt Abaw auß [Finland] .</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>wuͤrden ) vermeiden vnd in den Hafen vor Elſenfoß in [Finland] vns bergen konten / oder ob GOtt durch einen gnaͤdigen</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>22 Dito ſind 2 Schuten / ſo von Reval nach [Finland] ge- wolt / durch einen hefftigen Sturm auch nach Hochland</i></li></ul>    </div> </div>`)[0];
+                popup_833255fd4d5f475e9acf5783193c622e.setContent(html_eff486d42d6cef735b27015f3e1c6855);
+            
+        
+
+        circle_marker_7aae8750939fa3c029330a7a38938e0a.bindPopup(popup_833255fd4d5f475e9acf5783193c622e)
+        ;
+
+        
+    
+    
+            circle_marker_7aae8750939fa3c029330a7a38938e0a.bindTooltip(
+                `<div>
+                     <b>Finnland</b> (3×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_59329e9334e8221aeb9b4214c59d5a66 = L.circleMarker(
+                [55.790833333, 49.114444444],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_720d76966c5058cc4c9ac3ee0087f7ef = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_7ebc1511a9f6f404331f47955d0164a4 = $(`<div id="html_7ebc1511a9f6f404331f47955d0164a4" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Kasan</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Caßan</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 551487 | 3 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>nach Murama / vnd nach Nieſen Newgarden / vnd nach [Caßan] vnd nach Aſtrakan / vnſern Bojaren vnd Weiwoden vnd Diaken</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>zu vermehrung iſt jhnen zugelaſſen zu Nieſen / oder zu [Caßan] oder zu Aſtrakan zu erfuͤllung wegen Convoi , zu der</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>den 40 Perſonen / zu hewren in Aſtrakan oder zu [Caßan] / oder wor es jhnen am fuͤglichſten / an Ruſſiſche</i></li></ul>    </div> </div>`)[0];
+                popup_720d76966c5058cc4c9ac3ee0087f7ef.setContent(html_7ebc1511a9f6f404331f47955d0164a4);
+            
+        
+
+        circle_marker_59329e9334e8221aeb9b4214c59d5a66.bindPopup(popup_720d76966c5058cc4c9ac3ee0087f7ef)
+        ;
+
+        
+    
+    
+            circle_marker_59329e9334e8221aeb9b4214c59d5a66.bindTooltip(
+                `<div>
+                     <b>Kasan</b> (3×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_076db43e3ddf429df128a369d584ea36 = L.circleMarker(
+                [36.25, 48.5],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_6490bee0b657307ad6ef8daef067c019 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_3e49b265e3851827d9ea90c34255a8ef = $(`<div id="html_3e49b265e3851827d9ea90c34255a8ef" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Soltaniye (Verwaltungsbezirk)</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Solthanie, Sulthanie</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 11963463 | 3 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>niglichen Sitz gemachet haben / wie es auch der Name [Sulthanie] an- deutet . Dann die alten Koͤnige / nicht Schach</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>niglichen Sitz gemachet haben / wie es auch der Name [Sulthanie] an- deutet . Dann die alten Koͤnige / nicht Schach</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>353 . auffgeſetzet / vnd ſo hoch als die zu [Solthanie] an der Meſchaich Cho- dabende . Die Thuͤr ſo auff</i></li></ul>    </div> </div>`)[0];
+                popup_6490bee0b657307ad6ef8daef067c019.setContent(html_3e49b265e3851827d9ea90c34255a8ef);
+            
+        
+
+        circle_marker_076db43e3ddf429df128a369d584ea36.bindPopup(popup_6490bee0b657307ad6ef8daef067c019)
+        ;
+
+        
+    
+    
+            circle_marker_076db43e3ddf429df128a369d584ea36.bindTooltip(
+                `<div>
+                     <b>Soltaniye (Verwaltungsbezirk)</b> (3×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f4f843021d04912ea41cf28207856ee6 = L.circleMarker(
+                [33.315277777, 44.366111111],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_db5058e5878e0f079122e77f2c47b729 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_f0aa46004a81ba27de8398e87cb6d1f6 = $(`<div id="html_f0aa46004a81ba27de8398e87cb6d1f6" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Bagdad</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Babilon, Bagdad, Bagdat</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 98182 | 3 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>cken . ſchmeuchen ſihet . Den Toback bringen ſie von [Bagdad] oder Babi - lon vnd Kurdeſtan , woſelbſt Er heuffig</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>beſten Haͤupter vnd Officirer hinweg / hat Er die Stadt [Bagdat] oder Babilon / nachdem ſie 26. Jahr vnter der Perſer</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>vnd Officirer hinweg / hat Er die Stadt Bagdat oder [Babilon] / nachdem ſie 26. Jahr vnter der Perſer Gewalt geweſen</i></li></ul>    </div> </div>`)[0];
+                popup_db5058e5878e0f079122e77f2c47b729.setContent(html_f0aa46004a81ba27de8398e87cb6d1f6);
+            
+        
+
+        circle_marker_f4f843021d04912ea41cf28207856ee6.bindPopup(popup_db5058e5878e0f079122e77f2c47b729)
+        ;
+
+        
+    
+    
+            circle_marker_f4f843021d04912ea41cf28207856ee6.bindTooltip(
+                `<div>
+                     <b>Bagdad</b> (3×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_739813c6696dab663d2b45cf9f166641 = L.circleMarker(
+                [56.9475, 24.106944444],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_6fd47d4755d1d975590e7cd125d5c4ad = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_5df46ecab128ff0ecd6051d79f7e4260 = $(`<div id="html_5df46ecab128ff0ecd6051d79f7e4260" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Riga</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Riga</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 456172 | 2 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>war / wie folget : Herman von Staden / von [Riga] auß Lieffland / Marſchall . Die Namen der Voͤlcker des</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Der Junckern Diener . Marſchalls Diener Peter Wolders auß [Riga] / vnd Hans Carl Boͤhmer von Pirn auß Meißen .</i></li></ul>    </div> </div>`)[0];
+                popup_6fd47d4755d1d975590e7cd125d5c4ad.setContent(html_5df46ecab128ff0ecd6051d79f7e4260);
+            
+        
+
+        circle_marker_739813c6696dab663d2b45cf9f166641.bindPopup(popup_6fd47d4755d1d975590e7cd125d5c4ad)
+        ;
+
+        
+    
+    
+            circle_marker_739813c6696dab663d2b45cf9f166641.bindTooltip(
+                `<div>
+                     <b>Riga</b> (2×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_15ef610b6da10aa0b6ece817bcca5803 = L.circleMarker(
+                [51.0, 11.0],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_b0727952724977b7d6733f4c9522a578 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_29d81ad8df66ebcbdfd45364d3160a7a = $(`<div id="html_29d81ad8df66ebcbdfd45364d3160a7a" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Thüringen</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Thuͤringen</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2822542 | 2 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>/ Cammerherꝛ . Hartmannus Gramannus , von Stadt Jlmen auß [Thuͤringen] / Leib -Medicus . Heinrich Schwartz / von Gryphswalde /</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Littawen . Medici Diener Chriſtoff Buchner / von Kreißen auß [Thuͤringen] . Hoffemeiſters Diener Michel Poll / von Wittſtock auß der</i></li></ul>    </div> </div>`)[0];
+                popup_b0727952724977b7d6733f4c9522a578.setContent(html_29d81ad8df66ebcbdfd45364d3160a7a);
+            
+        
+
+        circle_marker_15ef610b6da10aa0b6ece817bcca5803.bindPopup(popup_b0727952724977b7d6733f4c9522a578)
+        ;
+
+        
+    
+    
+            circle_marker_15ef610b6da10aa0b6ece817bcca5803.bindTooltip(
+                `<div>
+                     <b>Thüringen</b> (2×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_24202bbf7b897686cca3f2e805ce9f6b = L.circleMarker(
+                [49.454166666, 11.0775],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_843c163f298869a60a57b7d2a16c7284 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_d28a366f3a928b33c3895809f83d93dd = $(`<div id="html_d28a366f3a928b33c3895809f83d93dd" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Nürnberg</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Nuͤrnberg</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2861650 | 2 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Hoff-Junckern vnd Truckſeſſen . Hieronymus Jmhoff / Patritius auß [Nuͤrnberg] . Thomas Melvil / von Ebertin / auß Schottland .</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>/ auß Mehren . Georg Pius Poͤhmer / Patritius auß [Nuͤrnberg] . Hans Voigt / von Freyberg auß Meißen . Berend</i></li></ul>    </div> </div>`)[0];
+                popup_843c163f298869a60a57b7d2a16c7284.setContent(html_d28a366f3a928b33c3895809f83d93dd);
+            
+        
+
+        circle_marker_24202bbf7b897686cca3f2e805ce9f6b.bindPopup(popup_843c163f298869a60a57b7d2a16c7284)
+        ;
+
+        
+    
+    
+            circle_marker_24202bbf7b897686cca3f2e805ce9f6b.bindTooltip(
+                `<div>
+                     <b>Nürnberg</b> (2×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5ee1c6f0bae8ac55cee5b93f6a5555c7 = L.circleMarker(
+                [57.15, -2.1],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_8721e6eba7608b95888609cf32668d33 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_d2ea465f032dbed27b621e3a4b2da50d = $(`<div id="html_d2ea465f032dbed27b621e3a4b2da50d" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Aberdeen</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Ebertin</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2657832 | 2 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Jmhoff / Patritius auß Nuͤrnberg . Thomas Melvil / von [Ebertin] / auß Schottland . Mag. Paulus Fleming , von Hartenſtein</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>dem Coburgiſchen . Thomas Melvils Diener Pieter Devitz / von [Ebertin] auß Schottland . Herꝛn Paſtors Diener Axel Kaeg / von</i></li></ul>    </div> </div>`)[0];
+                popup_8721e6eba7608b95888609cf32668d33.setContent(html_d2ea465f032dbed27b621e3a4b2da50d);
+            
+        
+
+        circle_marker_5ee1c6f0bae8ac55cee5b93f6a5555c7.bindPopup(popup_8721e6eba7608b95888609cf32668d33)
+        ;
+
+        
+    
+    
+            circle_marker_5ee1c6f0bae8ac55cee5b93f6a5555c7.bindTooltip(
+                `<div>
+                     <b>Aberdeen</b> (2×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ae086eed55313174738e9a1463244f1e = L.circleMarker(
+                [54.3482907, 18.6540233],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_b56a0ba7b20c27c9e19096a6d6c6ba95 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_7957bd07419ff5b3afa0997892de6377 = $(`<div id="html_7957bd07419ff5b3afa0997892de6377" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Danzig</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Dantzig</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 3099434 | 2 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>dem Voigtlande . Hans Gruͤnewaldt / Patritius auß der Stadt [Dantzig] . G Herꝛ Newe Perſianiſche H. Salomon Petri / von</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Graffſchafft Manß- feldt / Muſicant . Hans Weinberg / auß [Dantzig] / Feldſcherer . Jacob Scheve / von Newen Stettin auß</i></li></ul>    </div> </div>`)[0];
+                popup_b56a0ba7b20c27c9e19096a6d6c6ba95.setContent(html_7957bd07419ff5b3afa0997892de6377);
+            
+        
+
+        circle_marker_ae086eed55313174738e9a1463244f1e.bindPopup(popup_b56a0ba7b20c27c9e19096a6d6c6ba95)
+        ;
+
+        
+    
+    
+            circle_marker_ae086eed55313174738e9a1463244f1e.bindTooltip(
+                `<div>
+                     <b>Danzig</b> (2×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_93b5795cb6d269948a25c1ec25ae006a = L.circleMarker(
+                [54.05, 13.766666666],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_65eaed1d4c5179bb64cebb2d4144f915 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_4e16b26013b00789c213194bdfbcfb8a = $(`<div id="html_4e16b26013b00789c213194bdfbcfb8a" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Wolgast</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Wolgaſt</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 6550723 | 2 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Andere Pagen . Thomas Glantz / von [Wolgaſt] auß Pommern . Elias Galle / von Hertzberg auß Meißen</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Sallo- kowa auß Polen . Stalljunge Hans Pudenberg / von [Wolgaſt] auß Pommern . Hundejunge Johan Janſon / ein Hollaͤnder .</i></li></ul>    </div> </div>`)[0];
+                popup_65eaed1d4c5179bb64cebb2d4144f915.setContent(html_4e16b26013b00789c213194bdfbcfb8a);
+            
+        
+
+        circle_marker_93b5795cb6d269948a25c1ec25ae006a.bindPopup(popup_65eaed1d4c5179bb64cebb2d4144f915)
+        ;
+
+        
+    
+    
+            circle_marker_93b5795cb6d269948a25c1ec25ae006a.bindTooltip(
+                `<div>
+                     <b>Wolgast</b> (2×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_044e4e495624da95cb46d0ac7f464af7 = L.circleMarker(
+                [56.0, 10.0],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_3c72200bbf40696283d6eb1dcd5e75c2 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_f3a3065067ab378da53aaad6b10557b7 = $(`<div id="html_f3a3065067ab378da53aaad6b10557b7" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Dänemark</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Dennemarcken</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2623032 | 2 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Lande / Diſchler . Knut Karſtenſohn / von Neßſtadt auß [Dennemarcken] / Reitſchmidt . Simon Heuſeler / von Kirchain an der</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>wurden Johan Voigt vnd Steen Jenſen wieder zu ruͤcke durch [Dennemarcken] nach Gottorff geſchicket / vmb newe Creditiven , weil die</i></li></ul>    </div> </div>`)[0];
+                popup_3c72200bbf40696283d6eb1dcd5e75c2.setContent(html_f3a3065067ab378da53aaad6b10557b7);
+            
+        
+
+        circle_marker_044e4e495624da95cb46d0ac7f464af7.bindPopup(popup_3c72200bbf40696283d6eb1dcd5e75c2)
+        ;
+
+        
+    
+    
+            circle_marker_044e4e495624da95cb46d0ac7f464af7.bindTooltip(
+                `<div>
+                     <b>Dänemark</b> (2×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8975b53310441457f9594e7b36eecef5 = L.circleMarker(
+                [57.0, 25.0],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_5a2f74ff362658724b4a2423b0af3816 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_561c5d21b057a212fc625902c13f3c6b = $(`<div id="html_561c5d21b057a212fc625902c13f3c6b" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Lettland</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Churland</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 458258 | 2 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>/ Becker . Marten Wittenberg / von der Libaw auß [Churland] / Schuſter . Thomas Craig / von Tranent auß Schottland</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Wilhelm von Finckenbrinck / von der Stadt Mi- taw in [Churland] / Ruſſiſcher Dolmetſcher . Martin Albrecht / von Geburt ein</i></li></ul>    </div> </div>`)[0];
+                popup_5a2f74ff362658724b4a2423b0af3816.setContent(html_561c5d21b057a212fc625902c13f3c6b);
+            
+        
+
+        circle_marker_8975b53310441457f9594e7b36eecef5.bindPopup(popup_5a2f74ff362658724b4a2423b0af3816)
+        ;
+
+        
+    
+    
+            circle_marker_8975b53310441457f9594e7b36eecef5.bindTooltip(
+                `<div>
+                     <b>Lettland</b> (2×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9eb75cecbf9b141fd67187c0a3f5b65d = L.circleMarker(
+                [51.519722222, 6.3325],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_dae23c9d71447b783dac584e60d71bf6 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_37286e069d4ee657e6a3f24bd22d76ba = $(`<div id="html_37286e069d4ee657e6a3f24bd22d76ba" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Geldern</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Geldern</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 6557490 | 2 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Pfaltz / Schneider . Wilhelm Anraw / auß der Stadt [Geldern] im Niederlande / Schneider . Jacob Anderſen / von Montaw</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>gehalten ward / Jn dem von ſolchen gelobten vnd verehreten [Geldern] zu Reval ein Arm : vnd frommes Kind davon jhre</i></li></ul>    </div> </div>`)[0];
+                popup_dae23c9d71447b783dac584e60d71bf6.setContent(html_37286e069d4ee657e6a3f24bd22d76ba);
+            
+        
+
+        circle_marker_9eb75cecbf9b141fd67187c0a3f5b65d.bindPopup(popup_dae23c9d71447b783dac584e60d71bf6)
+        ;
+
+        
+    
+    
+            circle_marker_9eb75cecbf9b141fd67187c0a3f5b65d.bindTooltip(
+                `<div>
+                     <b>Geldern</b> (2×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_52309df945e7a7c41128baaa10941860 = L.circleMarker(
+                [52.316666666, 5.55],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_e45e26b74bf2aa2e3dfe64297636343f = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_9b73ec5d03ff7d16654fa33f9975d76a = $(`<div id="html_9b73ec5d03ff7d16654fa33f9975d76a" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Niederlande</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Niederlande</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2750405 | 2 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Schneider . Wilhelm Anraw / auß der Stadt Geldern im [Niederlande] / Schneider . Jacob Anderſen / von Montaw auß Preuſſen</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Straßburg / vnd Gerth Kroße auß der Stadt Grave im [Niederlande] . Trompeter Junge Jven Bartelſen / von Schleßwig . Muſicanten</i></li></ul>    </div> </div>`)[0];
+                popup_e45e26b74bf2aa2e3dfe64297636343f.setContent(html_9b73ec5d03ff7d16654fa33f9975d76a);
+            
+        
+
+        circle_marker_52309df945e7a7c41128baaa10941860.bindPopup(popup_e45e26b74bf2aa2e3dfe64297636343f)
+        ;
+
+        
+    
+    
+            circle_marker_52309df945e7a7c41128baaa10941860.bindTooltip(
+                `<div>
+                     <b>Niederlande</b> (2×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8436aed4882864c8dab58c216e6c5f7b = L.circleMarker(
+                [40.181111111, 44.513611111],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_a5c7fdf26afa818d15340fe79c8e222e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_15bb66d88d26d22d31731ceba565a379 = $(`<div id="html_15bb66d88d26d22d31731ceba565a379" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Q49755180</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Eruan</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 616052 | 2 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>die Geſand- ten zubeſuchen / war von der Graͤntz Feſtung [Eruan] gekommen / be- ſprach ſich mit vns gar freundlich /</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>weis vnd als ein Spiegel ſol poliret ſeyn / von [Eruan] bringen laſſen . Sonſt ſeynd in Jsfahan nebẽ dieſer hin</i></li></ul>    </div> </div>`)[0];
+                popup_a5c7fdf26afa818d15340fe79c8e222e.setContent(html_15bb66d88d26d22d31731ceba565a379);
+            
+        
+
+        circle_marker_8436aed4882864c8dab58c216e6c5f7b.bindPopup(popup_a5c7fdf26afa818d15340fe79c8e222e)
+        ;
+
+        
+    
+    
+            circle_marker_8436aed4882864c8dab58c216e6c5f7b.bindTooltip(
+                `<div>
+                     <b>Q49755180</b> (2×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0f5bf64a283843d831467fa47089a08a = L.circleMarker(
+                [36.285436666, 50.0041],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_a5266436dfe33e9ea1c65664256864e7 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_b8f54ffd7747fe43bc543b750e47689e = $(`<div id="html_b8f54ffd7747fe43bc543b750e47689e" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Qazvin</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Caswin</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 119505 | 2 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>im Gebirgen 1000 . Doͤrf- fer / vmb den Staͤdten [Caswin] vnd Tauris uͤber 2000 . Haͤuſer vnd 500. Kirchen .</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>er wegen des wolgelegenen luſtigen Ortes den Koͤniglichen Sitz von [Caswin] hieher verſetzet / hat die Stadt nicht allein an herꝛ-</i></li></ul>    </div> </div>`)[0];
+                popup_a5266436dfe33e9ea1c65664256864e7.setContent(html_b8f54ffd7747fe43bc543b750e47689e);
+            
+        
+
+        circle_marker_0f5bf64a283843d831467fa47089a08a.bindPopup(popup_a5266436dfe33e9ea1c65664256864e7)
+        ;
+
+        
+    
+    
+            circle_marker_0f5bf64a283843d831467fa47089a08a.bindTooltip(
+                `<div>
+                     <b>Qazvin</b> (2×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8ff40ee1b227e6934b82989b7b3712c6 = L.circleMarker(
+                [41.5345, 60.6249],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_eedb7eda10d3f8f945715f4d0eb683b2 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_b7426a264c63a686df4b34fdb3d52619 = $(`<div id="html_b7426a264c63a686df4b34fdb3d52619" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Urganch</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Chuareſſem</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 1512473 | 2 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>man in der newen Archontologia Cosmica ſetzen wil . Dann [Chuareſſem] , welche der Vßbekiſchen Tartern Provintz / iſt vnter den</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Neben den Perſern die Jn- dianer / vnterſchiedliche Tartern von [Chuareſſem] , Chattai , vnd Bu - chara , Tuͤrcken /</i></li></ul>    </div> </div>`)[0];
+                popup_eedb7eda10d3f8f945715f4d0eb683b2.setContent(html_b7426a264c63a686df4b34fdb3d52619);
+            
+        
+
+        circle_marker_8ff40ee1b227e6934b82989b7b3712c6.bindPopup(popup_eedb7eda10d3f8f945715f4d0eb683b2)
+        ;
+
+        
+    
+    
+            circle_marker_8ff40ee1b227e6934b82989b7b3712c6.bindTooltip(
+                `<div>
+                     <b>Urganch</b> (2×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_308735f58d508860324b7d3f6cdc2d74 = L.circleMarker(
+                [27.0, 29.0],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_ed4027d6ebdfcd989bccc8f7a0d5a8e0 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_a8b502735b3869926c7f42fda6b699eb = $(`<div id="html_a8b502735b3869926c7f42fda6b699eb" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Ägypten</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Egypten, Miſſer</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 357994 | 2 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Hand . Es iſt eine Frucht / ſo ſie auß [Miſſer] oder Egypten bekommen / an der Subſtantz den Tuͤrckiſchen /</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Es iſt eine Frucht / ſo ſie auß Miſſer oder [Egypten] bekommen / an der Subſtantz den Tuͤrckiſchen / an euſſerlicher</i></li></ul>    </div> </div>`)[0];
+                popup_ed4027d6ebdfcd989bccc8f7a0d5a8e0.setContent(html_a8b502735b3869926c7f42fda6b699eb);
+            
+        
+
+        circle_marker_308735f58d508860324b7d3f6cdc2d74.bindPopup(popup_ed4027d6ebdfcd989bccc8f7a0d5a8e0)
+        ;
+
+        
+    
+    
+            circle_marker_308735f58d508860324b7d3f6cdc2d74.bindTooltip(
+                `<div>
+                     <b>Ägypten</b> (2×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9cb221485e58b0be3cac58e281b917b2 = L.circleMarker(
+                [29.21, 57.07],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_70791bba4ccf0f3fd2a7f84b88e02d1d = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_bed267ef41d9d1d1d82327d064eed6aa = $(`<div id="html_bed267ef41d9d1d1d82327d064eed6aa" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Kerman</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Kirman</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 128231 | 2 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Schaffe des Winters / vnd die Laͤmmer des Sommers von [Kirman] dahin gebracht / vnd eines vmb 9. 10 . vnd</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Schaffe des Winters / vnd die Laͤmmer des Sommers von [Kirman] dahin gebracht / vnd eines vmb 9. 10 . vnd</i></li></ul>    </div> </div>`)[0];
+                popup_70791bba4ccf0f3fd2a7f84b88e02d1d.setContent(html_bed267ef41d9d1d1d82327d064eed6aa);
+            
+        
+
+        circle_marker_9cb221485e58b0be3cac58e281b917b2.bindPopup(popup_70791bba4ccf0f3fd2a7f84b88e02d1d)
+        ;
+
+        
+    
+    
+            circle_marker_9cb221485e58b0be3cac58e281b917b2.bindTooltip(
+                `<div>
+                     <b>Kerman</b> (2×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5b0ef12cfba330236135fa58f2e4381f = L.circleMarker(
+                [37.2774, 49.589],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_cacd70ef5d5d7973786bf390661087f7 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_47e1a245b5d0a2f4cf19997e981f470e = $(`<div id="html_47e1a245b5d0a2f4cf19997e981f470e" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Gilan</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Kilan</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 133349 | 2 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>. gelten . Jmgleichen auch der Reiß / welcher von [Kilan] , Weitzen vnd Gerſten / ſo von Kendemân , Tarum</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>. gelten . Jmgleichen auch der Reiß / welcher von [Kilan] , Weitzen vnd Gerſten / ſo von Kendemân , Tarum</i></li></ul>    </div> </div>`)[0];
+                popup_cacd70ef5d5d7973786bf390661087f7.setContent(html_47e1a245b5d0a2f4cf19997e981f470e);
+            
+        
+
+        circle_marker_5b0ef12cfba330236135fa58f2e4381f.bindPopup(popup_cacd70ef5d5d7973786bf390661087f7)
+        ;
+
+        
+    
+    
+            circle_marker_5b0ef12cfba330236135fa58f2e4381f.bindTooltip(
+                `<div>
+                     <b>Gilan</b> (2×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3d8813540d24b23f4e9104e18b9d1d32 = L.circleMarker(
+                [31.128888888, 53.282222222],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_ec7239a0b15ab3fa955001fa7c76bb91 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_1079fcd28f27e3209f1f7efc53ed31bb = $(`<div id="html_1079fcd28f27e3209f1f7efc53ed31bb" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Abarkuh</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Eberku</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 145427 | 2 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Weitzen vnd Gerſten / ſo von Kendemân , Tarum , [Eberku] vnd Jeſcht muͤſſen da- hin gefuͤhret werden / ſeynd theurer</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Weitzen vnd Gerſten / ſo von Kendemân , Tarum , [Eberku] vnd Jeſcht muͤſſen da- hin gefuͤhret werden / ſeynd theurer</i></li></ul>    </div> </div>`)[0];
+                popup_ec7239a0b15ab3fa955001fa7c76bb91.setContent(html_1079fcd28f27e3209f1f7efc53ed31bb);
+            
+        
+
+        circle_marker_3d8813540d24b23f4e9104e18b9d1d32.bindPopup(popup_ec7239a0b15ab3fa955001fa7c76bb91)
+        ;
+
+        
+    
+    
+            circle_marker_3d8813540d24b23f4e9104e18b9d1d32.bindTooltip(
+                `<div>
+                     <b>Abarkuh</b> (2×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6889e0ec7751d862e8bc875fd7e5d163 = L.circleMarker(
+                [31.897222222, 54.3675],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_f65fabb2ef5b9779d03af1deb4555ef0 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_2d3adcff7cc45c7dafd0f7a34f5b81d8 = $(`<div id="html_2d3adcff7cc45c7dafd0f7a34f5b81d8" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Yazd</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Jeſcht</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 111822 | 2 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Gerſten / ſo von Kendemân , Tarum , Eberku vnd [Jeſcht] muͤſſen da- hin gefuͤhret werden / ſeynd theurer als an</i></li><li style='margin-bottom:5px; font-size:0.85em;'><i>Gerſten / ſo von Kendemân , Tarum , Eberku vnd [Jeſcht] muͤſſen da- hin gefuͤhret werden / ſeynd theurer als an</i></li></ul>    </div> </div>`)[0];
+                popup_f65fabb2ef5b9779d03af1deb4555ef0.setContent(html_2d3adcff7cc45c7dafd0f7a34f5b81d8);
+            
+        
+
+        circle_marker_6889e0ec7751d862e8bc875fd7e5d163.bindPopup(popup_f65fabb2ef5b9779d03af1deb4555ef0)
+        ;
+
+        
+    
+    
+            circle_marker_6889e0ec7751d862e8bc875fd7e5d163.bindTooltip(
+                `<div>
+                     <b>Yazd</b> (2×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_89620065148f30f855dbc7d708e8093f = L.circleMarker(
+                [51.77778, 11.48889],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_fdb6cca90718c133de74f3de37d1590c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_3cf2a3a4b239b7659c89d9f9fb3d7c18 = $(`<div id="html_3cf2a3a4b239b7659c89d9f9fb3d7c18" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Aschersleben</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Aſchersleben</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2955168 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>in der an- dern Reiſe . Adamus Olearius , von [Aſchersleben] auß Sachſen / der Geſand- ten Rath vnd Secretarius .</i></li></ul>    </div> </div>`)[0];
+                popup_fdb6cca90718c133de74f3de37d1590c.setContent(html_3cf2a3a4b239b7659c89d9f9fb3d7c18);
+            
+        
+
+        circle_marker_89620065148f30f855dbc7d708e8093f.bindPopup(popup_fdb6cca90718c133de74f3de37d1590c)
+        ;
+
+        
+    
+    
+            circle_marker_89620065148f30f855dbc7d708e8093f.bindTooltip(
+                `<div>
+                     <b>Aschersleben</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bd6c0f0dae7b1b9ba549aa88bb19fe8b = L.circleMarker(
+                [51.3833, 12.2806],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_3a5a914975667c1bc81986806d62a371 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_219dcb649568c871c38c4137a4129c60 = $(`<div id="html_219dcb649568c871c38c4137a4129c60" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Lützschena</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Litzena</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2874708 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Ratzeburg / Stallmeiſter . Johan Chriſtoff von Vchteritz / von [Litzena] bey Leipzig auß Meißen / Cammerherꝛ . Hartmannus Gramannus ,</i></li></ul>    </div> </div>`)[0];
+                popup_3a5a914975667c1bc81986806d62a371.setContent(html_219dcb649568c871c38c4137a4129c60);
+            
+        
+
+        circle_marker_bd6c0f0dae7b1b9ba549aa88bb19fe8b.bindPopup(popup_3a5a914975667c1bc81986806d62a371)
+        ;
+
+        
+    
+    
+            circle_marker_bd6c0f0dae7b1b9ba549aa88bb19fe8b.bindTooltip(
+                `<div>
+                     <b>Lützschena</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6f53b6d9c7bd53f894d5ea0ab50f568d = L.circleMarker(
+                [50.6912, 10.9199],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_62f41da8ffbc517afe7f9b09dfba9872 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_3e8538da082c943f38de554514970b1d = $(`<div id="html_3e8538da082c943f38de554514970b1d" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Ilmenau</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Jlmen</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2896514 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>auß Meißen / Cammerherꝛ . Hartmannus Gramannus , von Stadt [Jlmen] auß Thuͤringen / Leib -Medicus . Heinrich Schwartz / von</i></li></ul>    </div> </div>`)[0];
+                popup_62f41da8ffbc517afe7f9b09dfba9872.setContent(html_3e8538da082c943f38de554514970b1d);
+            
+        
+
+        circle_marker_6f53b6d9c7bd53f894d5ea0ab50f568d.bindPopup(popup_62f41da8ffbc517afe7f9b09dfba9872)
+        ;
+
+        
+    
+    
+            circle_marker_6f53b6d9c7bd53f894d5ea0ab50f568d.bindTooltip(
+                `<div>
+                     <b>Ilmenau</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_74210c3823a115ff4f86617b215c6822 = L.circleMarker(
+                [50.668333333, 12.671388888],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_ea8e2f203ce03e67220b581759ba4f18 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_393b7e4e6a4731752f605e8f627bd15d = $(`<div id="html_393b7e4e6a4731752f605e8f627bd15d" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Hartenstein</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Hartenſtein</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 6551122 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Ebertin / auß Schottland . Mag. Paulus Fleming , von [Hartenſtein] auß dem Voigtlande . Hans Gruͤnewaldt / Patritius auß der</i></li></ul>    </div> </div>`)[0];
+                popup_ea8e2f203ce03e67220b581759ba4f18.setContent(html_393b7e4e6a4731752f605e8f627bd15d);
+            
+        
+
+        circle_marker_74210c3823a115ff4f86617b215c6822.bindPopup(popup_ea8e2f203ce03e67220b581759ba4f18)
+        ;
+
+        
+    
+    
+            circle_marker_74210c3823a115ff4f86617b215c6822.bindTooltip(
+                `<div>
+                     <b>Hartenstein</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4f3175e5758b1281f1747729995d0c0f = L.circleMarker(
+                [50.933611111, 12.705833333],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_42c4afc6c6179ff82b2be0f81c920a97 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_0ae6822c7cf97c6829b3ec4435adfbaf = $(`<div id="html_0ae6822c7cf97c6829b3ec4435adfbaf" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Penig</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Penick</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 6550781 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>. G Herꝛ Newe Perſianiſche H. Salomon Petri / von [Penick] auß Meißen / Hoffprediger . Hans Arpenbeke / von Dorpat</i></li></ul>    </div> </div>`)[0];
+                popup_42c4afc6c6179ff82b2be0f81c920a97.setContent(html_0ae6822c7cf97c6829b3ec4435adfbaf);
+            
+        
+
+        circle_marker_4f3175e5758b1281f1747729995d0c0f.bindPopup(popup_42c4afc6c6179ff82b2be0f81c920a97)
+        ;
+
+        
+    
+    
+            circle_marker_4f3175e5758b1281f1747729995d0c0f.bindTooltip(
+                `<div>
+                     <b>Penig</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ec0966a18826f001edc696db913846ec = L.circleMarker(
+                [58.38, 26.7225],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_2eb75af43d91c63b199b0fd737292280 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_48153b7dbc1f2f879d913783b937ab28 = $(`<div id="html_48153b7dbc1f2f879d913783b937ab28" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Tartu</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Dorpat</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 588335 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Penick auß Meißen / Hoffprediger . Hans Arpenbeke / von [Dorpat] auß Lieffland / Ruſſiſcher Translator . Heinrich Krebs / auß</i></li></ul>    </div> </div>`)[0];
+                popup_2eb75af43d91c63b199b0fd737292280.setContent(html_48153b7dbc1f2f879d913783b937ab28);
+            
+        
+
+        circle_marker_ec0966a18826f001edc696db913846ec.bindPopup(popup_2eb75af43d91c63b199b0fd737292280)
+        ;
+
+        
+    
+    
+            circle_marker_ec0966a18826f001edc696db913846ec.bindTooltip(
+                `<div>
+                     <b>Tartu</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_edd4ebae18b1dc641e5fb2c405fff50b = L.circleMarker(
+                [51.220555555, 4.400277777],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_bda8a522a265407c74b4d301f72b569e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_9c9794ef7a0b5c17a63ba6020a4c4476 = $(`<div id="html_9c9794ef7a0b5c17a63ba6020a4c4476" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Antwerpen</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Antwerpen</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2803138 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Heinrich Krebs / auß Hamburg . Lyon Bernoldi / auß [Antwerpen] .</i></li></ul>    </div> </div>`)[0];
+                popup_bda8a522a265407c74b4d301f72b569e.setContent(html_9c9794ef7a0b5c17a63ba6020a4c4476);
+            
+        
+
+        circle_marker_edd4ebae18b1dc641e5fb2c405fff50b.bindPopup(popup_bda8a522a265407c74b4d301f72b569e)
+        ;
+
+        
+    
+    
+            circle_marker_edd4ebae18b1dc641e5fb2c405fff50b.bindTooltip(
+                `<div>
+                     <b>Antwerpen</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c13fe42783df4062c3d0aab49a96c7a2 = L.circleMarker(
+                [49.195277777, 16.608333333],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_0d6cff2ff2f1f6faea12acd909f3abcc = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_6d81e58e1e32e420a01624b45e98dc18 = $(`<div id="html_6d81e58e1e32e420a01624b45e98dc18" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Brünn</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Brin</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 3078610 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Cammer Pagen . Chriſtian Ludwig Huͤbener / von [Brin] / auß Mehren . Georg Pius Poͤhmer / Patritius auß</i></li></ul>    </div> </div>`)[0];
+                popup_0d6cff2ff2f1f6faea12acd909f3abcc.setContent(html_6d81e58e1e32e420a01624b45e98dc18);
+            
+        
+
+        circle_marker_c13fe42783df4062c3d0aab49a96c7a2.bindPopup(popup_0d6cff2ff2f1f6faea12acd909f3abcc)
+        ;
+
+        
+    
+    
+            circle_marker_c13fe42783df4062c3d0aab49a96c7a2.bindTooltip(
+                `<div>
+                     <b>Brünn</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_afe519f6a419069f91eef51b898f5d91 = L.circleMarker(
+                [50.91178, 13.34196],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_b31e8d204397554f0b47598e1291ea03 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_edd7188425a8b4e8e965860736ead40b = $(`<div id="html_edd7188425a8b4e8e965860736ead40b" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Freiberg</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Freyberg</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2925192 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Poͤhmer / Patritius auß Nuͤrnberg . Hans Voigt / von [Freyberg] auß Meißen . Berend Koch / von Reval auß Lieffland</i></li></ul>    </div> </div>`)[0];
+                popup_b31e8d204397554f0b47598e1291ea03.setContent(html_edd7188425a8b4e8e965860736ead40b);
+            
+        
+
+        circle_marker_afe519f6a419069f91eef51b898f5d91.bindPopup(popup_b31e8d204397554f0b47598e1291ea03)
+        ;
+
+        
+    
+    
+            circle_marker_afe519f6a419069f91eef51b898f5d91.bindTooltip(
+                `<div>
+                     <b>Freiberg</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b2637753181349856e4392e44c29d2b2 = L.circleMarker(
+                [53.699166666, 9.913055555],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_fcac0a747333bfed1ccc6abf7ffd67d7 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_317826a7f08ea98d95c69059c5eb7955 = $(`<div id="html_317826a7f08ea98d95c69059c5eb7955" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Hasloh</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Haſelaw</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 6551685 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>von kleinen Peßna bey Leipzig . Sigfried Deſebruch / von [Haſelaw] auß Holſtein .</i></li></ul>    </div> </div>`)[0];
+                popup_fcac0a747333bfed1ccc6abf7ffd67d7.setContent(html_317826a7f08ea98d95c69059c5eb7955);
+            
+        
+
+        circle_marker_b2637753181349856e4392e44c29d2b2.bindPopup(popup_fcac0a747333bfed1ccc6abf7ffd67d7)
+        ;
+
+        
+    
+    
+            circle_marker_b2637753181349856e4392e44c29d2b2.bindTooltip(
+                `<div>
+                     <b>Hasloh</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1fa3ac5f7e10b2426eab02b7f1e2d088 = L.circleMarker(
+                [54.355833333, 9.161388888],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_47334e174aa8148de789fa8ddc7ac3da = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_9e8f7c3f33cb714e8293f9421c5d7f59 = $(`<div id="html_9e8f7c3f33cb714e8293f9421c5d7f59" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Drage</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Drage</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 6551540 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Geneva auß Sophojen / Cammerdiener . Nicolaus Goͤſchge / von [Drage] auß Stapelholm / Quartier- Meiſter . Adam Moͤller / auß</i></li></ul>    </div> </div>`)[0];
+                popup_47334e174aa8148de789fa8ddc7ac3da.setContent(html_9e8f7c3f33cb714e8293f9421c5d7f59);
+            
+        
+
+        circle_marker_1fa3ac5f7e10b2426eab02b7f1e2d088.bindPopup(popup_47334e174aa8148de789fa8ddc7ac3da)
+        ;
+
+        
+    
+    
+            circle_marker_1fa3ac5f7e10b2426eab02b7f1e2d088.bindTooltip(
+                `<div>
+                     <b>Drage</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_44aa52ef13e46737a2c2e51a720fb729 = L.circleMarker(
+                [54.35, 9.25],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_f24de986b1bf7ea05e3299dd5d1bcbe6 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_16c5b54a0fc749e8bb102390cf11b172 = $(`<div id="html_16c5b54a0fc749e8bb102390cf11b172" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Amt Stapelholm</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Stapelholm</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2829508 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Sophojen / Cammerdiener . Nicolaus Goͤſchge / von Drage auß [Stapelholm] / Quartier- Meiſter . Adam Moͤller / auß Luͤbeck /</i></li></ul>    </div> </div>`)[0];
+                popup_f24de986b1bf7ea05e3299dd5d1bcbe6.setContent(html_16c5b54a0fc749e8bb102390cf11b172);
+            
+        
+
+        circle_marker_44aa52ef13e46737a2c2e51a720fb729.bindPopup(popup_f24de986b1bf7ea05e3299dd5d1bcbe6)
+        ;
+
+        
+    
+    
+            circle_marker_44aa52ef13e46737a2c2e51a720fb729.bindTooltip(
+                `<div>
+                     <b>Amt Stapelholm</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_26620b3e37870dea3344f6d98a8644d9 = L.circleMarker(
+                [53.066666666, 11.866666666],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_e72629875f2ebf6e930c900c0a44edee = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_59381313d131e7b46fba2010c0166f5d = $(`<div id="html_59381313d131e7b46fba2010c0166f5d" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Perleberg</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Perleberg</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 6550650 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>/ auß Luͤbeck / Feld-Trompeter . Caſper Hertzberg / von [Perleberg] auß der Marck / Feld- Trompeter . Johan Hildebrandt /</i></li></ul>    </div> </div>`)[0];
+                popup_e72629875f2ebf6e930c900c0a44edee.setContent(html_59381313d131e7b46fba2010c0166f5d);
+            
+        
+
+        circle_marker_26620b3e37870dea3344f6d98a8644d9.bindPopup(popup_e72629875f2ebf6e930c900c0a44edee)
+        ;
+
+        
+    
+    
+            circle_marker_26620b3e37870dea3344f6d98a8644d9.bindTooltip(
+                `<div>
+                     <b>Perleberg</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_637c2149bbababfd6b16f86cc6056cfb = L.circleMarker(
+                [51.645, 11.511111111],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_63baf2c39e04042f66d81580021d0aa4 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_4daa43ad23100e694c643061e88fd04b = $(`<div id="html_4daa43ad23100e694c643061e88fd04b" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Hettstedt</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Heckſtadt</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 6550901 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>/ auß Hamburg / Muſicant . Chriſtian Herpig / auß [Heckſtadt] in der Graffſchafft Manß- feldt / Muſicant . Hans Weinberg</i></li></ul>    </div> </div>`)[0];
+                popup_63baf2c39e04042f66d81580021d0aa4.setContent(html_4daa43ad23100e694c643061e88fd04b);
+            
+        
+
+        circle_marker_637c2149bbababfd6b16f86cc6056cfb.bindPopup(popup_63baf2c39e04042f66d81580021d0aa4)
+        ;
+
+        
+    
+    
+            circle_marker_637c2149bbababfd6b16f86cc6056cfb.bindTooltip(
+                `<div>
+                     <b>Hettstedt</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e552c4c045a407c02db847ab47353ba9 = L.circleMarker(
+                [53.707777777, 16.699166666],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_2484e7ee47f7d6f61fa055ff453eaea3 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_fa9057433f21e9ee756e1f518fcd3834 = $(`<div id="html_fa9057433f21e9ee756e1f518fcd3834" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Szczecinek</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Newen   Stettin</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 3083826 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>/ auß Dantzig / Feldſcherer . Jacob Scheve / von [Newen   Stettin] auß Pommern / Kuͤchenſchreiber . Simon Kretzſchmer / auß Leipzig</i></li></ul>    </div> </div>`)[0];
+                popup_2484e7ee47f7d6f61fa055ff453eaea3.setContent(html_fa9057433f21e9ee756e1f518fcd3834);
+            
+        
+
+        circle_marker_e552c4c045a407c02db847ab47353ba9.bindPopup(popup_2484e7ee47f7d6f61fa055ff453eaea3)
+        ;
+
+        
+    
+    
+            circle_marker_e552c4c045a407c02db847ab47353ba9.bindTooltip(
+                `<div>
+                     <b>Szczecinek</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8350aa7b208d394c5b43692c658e5c78 = L.circleMarker(
+                [53.476944444, 9.701111111],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_318092f53c3513c6c47131f3e66f7e81 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_757a24e5143168cc24ee1475f60c113d = $(`<div id="html_757a24e5143168cc24ee1475f60c113d" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Buxtehude</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Boxtehude</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 6557452 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>/ auß Leipzig / Silberdiener . Dieterich Nieman / von [Boxtehude] / Conterfeyer vnd Silberdiener . Franciſcus Murrer / von Newen-Marck</i></li></ul>    </div> </div>`)[0];
+                popup_318092f53c3513c6c47131f3e66f7e81.setContent(html_757a24e5143168cc24ee1475f60c113d);
+            
+        
+
+        circle_marker_8350aa7b208d394c5b43692c658e5c78.bindPopup(popup_318092f53c3513c6c47131f3e66f7e81)
+        ;
+
+        
+    
+    
+            circle_marker_8350aa7b208d394c5b43692c658e5c78.bindTooltip(
+                `<div>
+                     <b>Buxtehude</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6093a2d21baba27ac0a689bb6e19c94e = L.circleMarker(
+                [49.28028, 11.46278],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_78126dce3ef2b52eb940eed6094ebd6e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_2428ab0c117bfac9c5728adf6147c489 = $(`<div id="html_2428ab0c117bfac9c5728adf6147c489" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Neumarkt in der Oberpfalz</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Newen-Marck   auß   der   Ober-  pfaltz</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2864549 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Boxtehude / Conterfeyer vnd Silberdiener . Franciſcus Murrer / von [Newen-Marck   auß   der   Ober-  pfaltz] / Mundſchencke . Michael Pfaundler / von Jnſpꝛug auß Tyrol</i></li></ul>    </div> </div>`)[0];
+                popup_78126dce3ef2b52eb940eed6094ebd6e.setContent(html_2428ab0c117bfac9c5728adf6147c489);
+            
+        
+
+        circle_marker_6093a2d21baba27ac0a689bb6e19c94e.bindPopup(popup_78126dce3ef2b52eb940eed6094ebd6e)
+        ;
+
+        
+    
+    
+            circle_marker_6093a2d21baba27ac0a689bb6e19c94e.bindTooltip(
+                `<div>
+                     <b>Neumarkt in der Oberpfalz</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1f6b1ce95c4e7dfeae055a5feb11c3ec = L.circleMarker(
+                [47.268333333, 11.393333333],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_f6a0ca7500b0c2371cc20d594d5100bc = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_495aadaa8214dcdd7ef02ec548abeb52 = $(`<div id="html_495aadaa8214dcdd7ef02ec548abeb52" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Innsbruck</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Jnſpꝛug</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2775216 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>der Ober- pfaltz / Mundſchencke . Michael Pfaundler / von [Jnſpꝛug] auß Tyrol / Vhrmacher . Hans Koͤſel / von Kempten</i></li></ul>    </div> </div>`)[0];
+                popup_f6a0ca7500b0c2371cc20d594d5100bc.setContent(html_495aadaa8214dcdd7ef02ec548abeb52);
+            
+        
+
+        circle_marker_1f6b1ce95c4e7dfeae055a5feb11c3ec.bindPopup(popup_f6a0ca7500b0c2371cc20d594d5100bc)
+        ;
+
+        
+    
+    
+            circle_marker_1f6b1ce95c4e7dfeae055a5feb11c3ec.bindTooltip(
+                `<div>
+                     <b>Innsbruck</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7a730efe876567a19a9973a5876f126b = L.circleMarker(
+                [48.77667, 9.1775],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_5f26d94438eb44177d6ff46d97dfede9 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_4a510abd3cae15707f9c89f7ca98878d = $(`<div id="html_4a510abd3cae15707f9c89f7ca98878d" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Q32749678</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Studgard</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2825297 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Trabanten . Chriſtoff Hartman / von [Studgard] auß dem Wuͤrtember- ger Lande / Diſchler . Knut Karſtenſohn</i></li></ul>    </div> </div>`)[0];
+                popup_5f26d94438eb44177d6ff46d97dfede9.setContent(html_4a510abd3cae15707f9c89f7ca98878d);
+            
+        
+
+        circle_marker_7a730efe876567a19a9973a5876f126b.bindPopup(popup_5f26d94438eb44177d6ff46d97dfede9)
+        ;
+
+        
+    
+    
+            circle_marker_7a730efe876567a19a9973a5876f126b.bindTooltip(
+                `<div>
+                     <b>Q32749678</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f0881f240a4b9ca69e4e38f9d33b2609 = L.circleMarker(
+                [55.23333333, 11.76666667],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_d984729814b05f1b28f69ff5fb94b74a = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_c71950f906a2231b13a62098e8ad994e = $(`<div id="html_c71950f906a2231b13a62098e8ad994e" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Næstved</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Neßſtadt</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2616038 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Wuͤrtember- ger Lande / Diſchler . Knut Karſtenſohn / von [Neßſtadt] auß Dennemarcken / Reitſchmidt . Simon Heuſeler / von Kirchain</i></li></ul>    </div> </div>`)[0];
+                popup_d984729814b05f1b28f69ff5fb94b74a.setContent(html_c71950f906a2231b13a62098e8ad994e);
+            
+        
+
+        circle_marker_f0881f240a4b9ca69e4e38f9d33b2609.bindPopup(popup_d984729814b05f1b28f69ff5fb94b74a)
+        ;
+
+        
+    
+    
+            circle_marker_f0881f240a4b9ca69e4e38f9d33b2609.bindTooltip(
+                `<div>
+                     <b>Næstved</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3391c0174aebf4be4cb785b79206cd7d = L.circleMarker(
+                [48.648333333, 9.451111111],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_50d52e985df415efb107aabc74e0b4a3 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_d0a4feb45d9b70871021ce3c2e93095c = $(`<div id="html_d0a4feb45d9b70871021ce3c2e93095c" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Kirchheim unter Teck</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Kirchain   an   der   Eck</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 6557942 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Neßſtadt auß Dennemarcken / Reitſchmidt . Simon Heuſeler / von [Kirchain   an   der   Eck] auß dem Wuͤr- temberger Lande / Sattler . Richardt Schmil</i></li></ul>    </div> </div>`)[0];
+                popup_50d52e985df415efb107aabc74e0b4a3.setContent(html_d0a4feb45d9b70871021ce3c2e93095c);
+            
+        
+
+        circle_marker_3391c0174aebf4be4cb785b79206cd7d.bindPopup(popup_50d52e985df415efb107aabc74e0b4a3)
+        ;
+
+        
+    
+    
+            circle_marker_3391c0174aebf4be4cb785b79206cd7d.bindTooltip(
+                `<div>
+                     <b>Kirchheim unter Teck</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b633fbba967894ee802cca90db3bcfec = L.circleMarker(
+                [53.72574, 13.88169],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_842eb3672b32f00abbee70b50453f8fa = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_94296652e92669d58632a55ccd261f58 = $(`<div id="html_94296652e92669d58632a55ccd261f58" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Lübs</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Luͤbß</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2875571 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Wuͤr- temberger Lande / Sattler . Richardt Schmil / von [Luͤbß] auß Mecklenburg / Becker . Marten Wittenberg / von der</i></li></ul>    </div> </div>`)[0];
+                popup_842eb3672b32f00abbee70b50453f8fa.setContent(html_94296652e92669d58632a55ccd261f58);
+            
+        
+
+        circle_marker_b633fbba967894ee802cca90db3bcfec.bindPopup(popup_842eb3672b32f00abbee70b50453f8fa)
+        ;
+
+        
+    
+    
+            circle_marker_b633fbba967894ee802cca90db3bcfec.bindTooltip(
+                `<div>
+                     <b>Lübs</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_248a237854389d01c5ed4541afc84951 = L.circleMarker(
+                [56.541944444, 21.036666666],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_afce5c7bd0737b3b09fe6c9b1f199311 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_b85e233d695ceb1af4a2f5a83f5c4fd8 = $(`<div id="html_b85e233d695ceb1af4a2f5a83f5c4fd8" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Liepāja</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Libaw</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 457955 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>auß Mecklenburg / Becker . Marten Wittenberg / von der [Libaw] auß Churland / Schuſter . Thomas Craig / von Tranent</i></li></ul>    </div> </div>`)[0];
+                popup_afce5c7bd0737b3b09fe6c9b1f199311.setContent(html_b85e233d695ceb1af4a2f5a83f5c4fd8);
+            
+        
+
+        circle_marker_248a237854389d01c5ed4541afc84951.bindPopup(popup_afce5c7bd0737b3b09fe6c9b1f199311)
+        ;
+
+        
+    
+    
+            circle_marker_248a237854389d01c5ed4541afc84951.bindTooltip(
+                `<div>
+                     <b>Liepāja</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8afcdd3f11f54e375c1564cfdd2847ac = L.circleMarker(
+                [55.9447, -2.95417],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_7619a4efe34def60b22bc402f68e0bfc = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_71fa305aafd4833320d2b29fc8813bbd = $(`<div id="html_71fa305aafd4833320d2b29fc8813bbd" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Tranent</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Tranent</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2635563 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Libaw auß Churland / Schuſter . Thomas Craig / von [Tranent] auß Schottland . Jochim Jke / bey New Brandenburg auß</i></li></ul>    </div> </div>`)[0];
+                popup_7619a4efe34def60b22bc402f68e0bfc.setContent(html_71fa305aafd4833320d2b29fc8813bbd);
+            
+        
+
+        circle_marker_8afcdd3f11f54e375c1564cfdd2847ac.bindPopup(popup_7619a4efe34def60b22bc402f68e0bfc)
+        ;
+
+        
+    
+    
+            circle_marker_8afcdd3f11f54e375c1564cfdd2847ac.bindTooltip(
+                `<div>
+                     <b>Tranent</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2615df5b88bd5db6e2803fb5ae0ebfb4 = L.circleMarker(
+                [52.103333333, 5.179166666],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_0a9dcf3b5a28325afcf5269303da737a = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_949968affa09bb7412b846839032ddb1 = $(`<div id="html_949968affa09bb7412b846839032ddb1" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Utrecht</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Vtrecht</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2745909 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Brandenburg auß Mecklenburg . Gert Weſterberg / auß der Stadt [Vtrecht] / Schneider .</i></li></ul>    </div> </div>`)[0];
+                popup_0a9dcf3b5a28325afcf5269303da737a.setContent(html_949968affa09bb7412b846839032ddb1);
+            
+        
+
+        circle_marker_2615df5b88bd5db6e2803fb5ae0ebfb4.bindPopup(popup_0a9dcf3b5a28325afcf5269303da737a)
+        ;
+
+        
+    
+    
+            circle_marker_2615df5b88bd5db6e2803fb5ae0ebfb4.bindTooltip(
+                `<div>
+                     <b>Utrecht</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0f04be72d23b0da93052e39b8f69fd35 = L.circleMarker(
+                [53.9606, 10.8692],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_981c6f951f94221355c9a9b441a64f60 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_50be5ed7c6c39d8654ae4c708230114c = $(`<div id="html_50be5ed7c6c39d8654ae4c708230114c" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Travemünde</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Travemuͤnda</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2821480 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>/ auß der Stadt Hamburg . Hans Hoffemeiſter / von [Travemuͤnda] / Schlachter . Etzerdt Adolff Welner / von Eſens auß</i></li></ul>    </div> </div>`)[0];
+                popup_981c6f951f94221355c9a9b441a64f60.setContent(html_50be5ed7c6c39d8654ae4c708230114c);
+            
+        
+
+        circle_marker_0f04be72d23b0da93052e39b8f69fd35.bindPopup(popup_981c6f951f94221355c9a9b441a64f60)
+        ;
+
+        
+    
+    
+            circle_marker_0f04be72d23b0da93052e39b8f69fd35.bindTooltip(
+                `<div>
+                     <b>Travemünde</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ce2996b67be9c6fc38c66f89b70fc692 = L.circleMarker(
+                [53.646944444, 7.612777777],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_045cbbaa8c3ccfe74518bb9fe8250b43 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_82fd9edeb4d7bff8dd60ede46f8c83a6 = $(`<div id="html_82fd9edeb4d7bff8dd60ede46f8c83a6" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Esens</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Eſens</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 6557489 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>von Travemuͤnda / Schlachter . Etzerdt Adolff Welner / von [Eſens] auß Oſt-Frießland / Schneider . Caſper Seeler / von Groß</i></li></ul>    </div> </div>`)[0];
+                popup_045cbbaa8c3ccfe74518bb9fe8250b43.setContent(html_82fd9edeb4d7bff8dd60ede46f8c83a6);
+            
+        
+
+        circle_marker_ce2996b67be9c6fc38c66f89b70fc692.bindPopup(popup_045cbbaa8c3ccfe74518bb9fe8250b43)
+        ;
+
+        
+    
+    
+            circle_marker_ce2996b67be9c6fc38c66f89b70fc692.bindTooltip(
+                `<div>
+                     <b>Esens</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_593f48bf56f9eaee9b11d90369c1eaeb = L.circleMarker(
+                [51.658888888, 16.080277777],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_88526fc844991fb1b3e8c5a5b971aff1 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_0a4e3f809a2b84fec8ae005c422aac40 = $(`<div id="html_0a4e3f809a2b84fec8ae005c422aac40" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Głogów</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Groß   Glogaw</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 3099213 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Eſens auß Oſt-Frießland / Schneider . Caſper Seeler / von [Groß   Glogaw] auß der Schleſien / Buͤchſenſchmied . Frantz Wilhelm / auß</i></li></ul>    </div> </div>`)[0];
+                popup_88526fc844991fb1b3e8c5a5b971aff1.setContent(html_0a4e3f809a2b84fec8ae005c422aac40);
+            
+        
+
+        circle_marker_593f48bf56f9eaee9b11d90369c1eaeb.bindPopup(popup_88526fc844991fb1b3e8c5a5b971aff1)
+        ;
+
+        
+    
+    
+            circle_marker_593f48bf56f9eaee9b11d90369c1eaeb.bindTooltip(
+                `<div>
+                     <b>Głogów</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6f5fad1c5f6d6d8ce247e8f54126cb7e = L.circleMarker(
+                [51.1035, 17.0396],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_a5cc64c844e1c86bedd6c56206c91201 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_31704aa858c9c0233d3cd22421b13d37 = $(`<div id="html_31704aa858c9c0233d3cd22421b13d37" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Schlesien</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Schleſien</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 3066138 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Schneider . Caſper Seeler / von Groß Glogaw auß der [Schleſien] / Buͤchſenſchmied . Frantz Wilhelm / auß der Pfaltz /</i></li></ul>    </div> </div>`)[0];
+                popup_a5cc64c844e1c86bedd6c56206c91201.setContent(html_31704aa858c9c0233d3cd22421b13d37);
+            
+        
+
+        circle_marker_6f5fad1c5f6d6d8ce247e8f54126cb7e.bindPopup(popup_a5cc64c844e1c86bedd6c56206c91201)
+        ;
+
+        
+    
+    
+            circle_marker_6f5fad1c5f6d6d8ce247e8f54126cb7e.bindTooltip(
+                `<div>
+                     <b>Schlesien</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4b9cf0987d99de788f5bd537c83cfa20 = L.circleMarker(
+                [50.4375, 7.825833333],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_aa3fbc6d6106b0de06b9885a2f42480c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_d466ffd498a67374f63c3b1cc70d348c = $(`<div id="html_d466ffd498a67374f63c3b1cc70d348c" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Montabaur</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Montaw</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 6557891 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Geldern im Niederlande / Schneider . Jacob Anderſen / von [Montaw] auß Preuſſen / Schuſter . Hans Gerike / auß Mecklenburg</i></li></ul>    </div> </div>`)[0];
+                popup_aa3fbc6d6106b0de06b9885a2f42480c.setContent(html_d466ffd498a67374f63c3b1cc70d348c);
+            
+        
+
+        circle_marker_4b9cf0987d99de788f5bd537c83cfa20.bindPopup(popup_aa3fbc6d6106b0de06b9885a2f42480c)
+        ;
+
+        
+    
+    
+            circle_marker_4b9cf0987d99de788f5bd537c83cfa20.bindTooltip(
+                `<div>
+                     <b>Montabaur</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4712927894352d241197c2d52468c780 = L.circleMarker(
+                [48.9957, 9.14123],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_a52f324b5abd464fd693a06fba130899 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_7ee61e7504592a11461f641e8e0a32f8 = $(`<div id="html_7ee61e7504592a11461f641e8e0a32f8" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Besigheim</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Beſick   heim</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2949803 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Darauff folget : Johan Allgeyer / von [Beſick   heim] auß dem Wuͤrtemberger Lande / Mundkoch / mit ſeinen Leuten</i></li></ul>    </div> </div>`)[0];
+                popup_a52f324b5abd464fd693a06fba130899.setContent(html_7ee61e7504592a11461f641e8e0a32f8);
+            
+        
+
+        circle_marker_4712927894352d241197c2d52468c780.bindPopup(popup_a52f324b5abd464fd693a06fba130899)
+        ;
+
+        
+    
+    
+            circle_marker_4712927894352d241197c2d52468c780.bindTooltip(
+                `<div>
+                     <b>Besigheim</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b9feaf3271aafa9fa39210bc0263dce3 = L.circleMarker(
+                [54.942777777, 8.863888888],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_7726cf744cc48627cd780165f2fec92c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_e66ff45ecac4cc8692bd5f873b459328 = $(`<div id="html_e66ff45ecac4cc8692bd5f873b459328" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Tønder</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Tundern</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2611497 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>mit ſeinen Leuten / Als : Jacob Hanſen / von [Tundern] außm Fuͤrſtenthumb Schleß- wig / Kuͤchenknecht . Joſt Schaff /</i></li></ul>    </div> </div>`)[0];
+                popup_7726cf744cc48627cd780165f2fec92c.setContent(html_e66ff45ecac4cc8692bd5f873b459328);
+            
+        
+
+        circle_marker_b9feaf3271aafa9fa39210bc0263dce3.bindPopup(popup_7726cf744cc48627cd780165f2fec92c)
+        ;
+
+        
+    
+    
+            circle_marker_b9feaf3271aafa9fa39210bc0263dce3.bindTooltip(
+                `<div>
+                     <b>Tønder</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aaa13c25affb3c2c52e1a684331f6eef = L.circleMarker(
+                [51.315777777, 9.497916666],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_b729be6e1588bc4a52646f674c02668e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_3289a401f3bd81a3ee35ed196c520f8b = $(`<div id="html_3289a401f3bd81a3ee35ed196c520f8b" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Kassel</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Caſſel</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2892518 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Fuͤrſtenthumb Schleß- wig / Kuͤchenknecht . Joſt Schaff / von [Caſſel] auß Heſſen / Kuͤchenknecht . Hans Luck / vom Kiell</i></li></ul>    </div> </div>`)[0];
+                popup_b729be6e1588bc4a52646f674c02668e.setContent(html_3289a401f3bd81a3ee35ed196c520f8b);
+            
+        
+
+        circle_marker_aaa13c25affb3c2c52e1a684331f6eef.bindPopup(popup_b729be6e1588bc4a52646f674c02668e)
+        ;
+
+        
+    
+    
+            circle_marker_aaa13c25affb3c2c52e1a684331f6eef.bindTooltip(
+                `<div>
+                     <b>Kassel</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_153ca8d0c71a50a749a166965a90edf4 = L.circleMarker(
+                [50.608027777, 9.028472222],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_dce695bd9b02d05dcff117b2a4345236 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_c8f20f55d68c3302e85d6cc852af71cd = $(`<div id="html_c8f20f55d68c3302e85d6cc852af71cd" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Hessen</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Heſſen</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2905330 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>wig / Kuͤchenknecht . Joſt Schaff / von Caſſel auß [Heſſen] / Kuͤchenknecht . Hans Luck / vom Kiell auß Holſtein</i></li></ul>    </div> </div>`)[0];
+                popup_dce695bd9b02d05dcff117b2a4345236.setContent(html_c8f20f55d68c3302e85d6cc852af71cd);
+            
+        
+
+        circle_marker_153ca8d0c71a50a749a166965a90edf4.bindPopup(popup_dce695bd9b02d05dcff117b2a4345236)
+        ;
+
+        
+    
+    
+            circle_marker_153ca8d0c71a50a749a166965a90edf4.bindTooltip(
+                `<div>
+                     <b>Hessen</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_49fbcf50af58f6004fc643712d789c0a = L.circleMarker(
+                [50.962222222, 13.940277777],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_e3483b09ab04abc50c0d01298d8f0b00 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_16ccc363839dfc0eb651206665829a23 = $(`<div id="html_16ccc363839dfc0eb651206665829a23" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Pirna</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Pirn</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 6550822 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Peter Wolders auß Riga / vnd Hans Carl Boͤhmer von [Pirn] auß Meißen . Raths vnd Secretarij Diener Matthias Hebenerius ,</i></li></ul>    </div> </div>`)[0];
+                popup_e3483b09ab04abc50c0d01298d8f0b00.setContent(html_16ccc363839dfc0eb651206665829a23);
+            
+        
+
+        circle_marker_49fbcf50af58f6004fc643712d789c0a.bindPopup(popup_e3483b09ab04abc50c0d01298d8f0b00)
+        ;
+
+        
+    
+    
+            circle_marker_49fbcf50af58f6004fc643712d789c0a.bindTooltip(
+                `<div>
+                     <b>Pirna</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_add97712fbc9eb8299d7fcb9d8df39ab = L.circleMarker(
+                [49.640926771, 18.145022037],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_f4d5919722ba53bf983e3a488961af96 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_f45ff00e4479d6dfeca1bbbcc515f21e = $(`<div id="html_f45ff00e4479d6dfeca1bbbcc515f21e" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Příbor</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Bribor</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 3067544 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Meißen . Raths vnd Secretarij Diener Matthias Hebenerius , von [Bribor] auß Mehren / vnd Marten Larſon von Weſteras auß Schweden</i></li></ul>    </div> </div>`)[0];
+                popup_f4d5919722ba53bf983e3a488961af96.setContent(html_f45ff00e4479d6dfeca1bbbcc515f21e);
+            
+        
+
+        circle_marker_add97712fbc9eb8299d7fcb9d8df39ab.bindPopup(popup_f4d5919722ba53bf983e3a488961af96)
+        ;
+
+        
+    
+    
+            circle_marker_add97712fbc9eb8299d7fcb9d8df39ab.bindTooltip(
+                `<div>
+                     <b>Příbor</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4bb97786659cd18442cea6a042097a5f = L.circleMarker(
+                [59.61731938, 16.542157497],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_cc1d7309a387d1065b10459b103d70f1 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_2fee1c5949b4f48eca7ebbb1634fdfc2 = $(`<div id="html_2fee1c5949b4f48eca7ebbb1634fdfc2" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Västerås</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Weſteras</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2664454 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>, von Bribor auß Mehren / vnd Marten Larſon von [Weſteras] auß Schweden . Stallmeiſters Diener Jochim Binger von Briell auß</i></li></ul>    </div> </div>`)[0];
+                popup_cc1d7309a387d1065b10459b103d70f1.setContent(html_2fee1c5949b4f48eca7ebbb1634fdfc2);
+            
+        
+
+        circle_marker_4bb97786659cd18442cea6a042097a5f.bindPopup(popup_cc1d7309a387d1065b10459b103d70f1)
+        ;
+
+        
+    
+    
+            circle_marker_4bb97786659cd18442cea6a042097a5f.bindTooltip(
+                `<div>
+                     <b>Västerås</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f33e2cab9674a7a974d46a9abc812e42 = L.circleMarker(
+                [53.7253, 11.7359],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_381070fdfb59671f962ddf956f3afe6b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_25ff466197678fbd39291eb8e43a6adb = $(`<div id="html_25ff466197678fbd39291eb8e43a6adb" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Brüel</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Briell</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2943362 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>von Weſteras auß Schweden . Stallmeiſters Diener Jochim Binger von [Briell] auß Meck- lenburg / vnd Hans Linaw auß Mecklenburg .</i></li></ul>    </div> </div>`)[0];
+                popup_381070fdfb59671f962ddf956f3afe6b.setContent(html_25ff466197678fbd39291eb8e43a6adb);
+            
+        
+
+        circle_marker_f33e2cab9674a7a974d46a9abc812e42.bindPopup(popup_381070fdfb59671f962ddf956f3afe6b)
+        ;
+
+        
+    
+    
+            circle_marker_f33e2cab9674a7a974d46a9abc812e42.bindTooltip(
+                `<div>
+                     <b>Brüel</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1973bcb4b6334a3dd11b590843f22e00 = L.circleMarker(
+                [54.4, 24.05],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_149cfcd04c648c49388a98362bc3f25b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_186302c4826570352e6066831f7280a9 = $(`<div id="html_186302c4826570352e6066831f7280a9" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Alytus</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Olit</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 601084 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>auß Mecklenburg . Cammer-Herꝛn Diener Albrecht Zudotski / von der [Olit] auß Littawen . Medici Diener Chriſtoff Buchner / von Kreißen</i></li></ul>    </div> </div>`)[0];
+                popup_149cfcd04c648c49388a98362bc3f25b.setContent(html_186302c4826570352e6066831f7280a9);
+            
+        
+
+        circle_marker_1973bcb4b6334a3dd11b590843f22e00.bindPopup(popup_149cfcd04c648c49388a98362bc3f25b)
+        ;
+
+        
+    
+    
+            circle_marker_1973bcb4b6334a3dd11b590843f22e00.bindTooltip(
+                `<div>
+                     <b>Alytus</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ea4c4cad9ea45c689299bb6ebedb24f3 = L.circleMarker(
+                [55.2, 24.0],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_9b77a1e1762b656ac717a700fc27620e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_013e70765f26101937e53cf662510a8b = $(`<div id="html_013e70765f26101937e53cf662510a8b" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Litauen</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Littawen</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 597427 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>. Cammer-Herꝛn Diener Albrecht Zudotski / von der Olit auß [Littawen] . Medici Diener Chriſtoff Buchner / von Kreißen auß Thuͤringen</i></li></ul>    </div> </div>`)[0];
+                popup_9b77a1e1762b656ac717a700fc27620e.setContent(html_013e70765f26101937e53cf662510a8b);
+            
+        
+
+        circle_marker_ea4c4cad9ea45c689299bb6ebedb24f3.bindPopup(popup_9b77a1e1762b656ac717a700fc27620e)
+        ;
+
+        
+    
+    
+            circle_marker_ea4c4cad9ea45c689299bb6ebedb24f3.bindTooltip(
+                `<div>
+                     <b>Litauen</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_336b9edade79e72202d101f740083309 = L.circleMarker(
+                [51.229722222, 10.944166666],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_78cb972caeb1479142bcea093faa1a83 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_3e51ddc52dea2ea5b81d6fd1f16fd621 = $(`<div id="html_3e51ddc52dea2ea5b81d6fd1f16fd621" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Greußen</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Kreißen</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2917579 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Olit auß Littawen . Medici Diener Chriſtoff Buchner / von [Kreißen] auß Thuͤringen . Hoffemeiſters Diener Michel Poll / von Wittſtock</i></li></ul>    </div> </div>`)[0];
+                popup_78cb972caeb1479142bcea093faa1a83.setContent(html_3e51ddc52dea2ea5b81d6fd1f16fd621);
+            
+        
+
+        circle_marker_336b9edade79e72202d101f740083309.bindPopup(popup_78cb972caeb1479142bcea093faa1a83)
+        ;
+
+        
+    
+    
+            circle_marker_336b9edade79e72202d101f740083309.bindTooltip(
+                `<div>
+                     <b>Greußen</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad59ed6170c2ee71ab1eab8ac495095e = L.circleMarker(
+                [53.16118, 12.48287],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_bea7776953016a33ca977c340f0fa040 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_fdd8f6f95dcbefc1e167ddc1f0735140 = $(`<div id="html_fdd8f6f95dcbefc1e167ddc1f0735140" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Wittstock/Dosse</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Wittſtock</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 2807201 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Kreißen auß Thuͤringen . Hoffemeiſters Diener Michel Poll / von [Wittſtock] auß der Marck . Jm Hoffs Diener / Niclaeß Voigt</i></li></ul>    </div> </div>`)[0];
+                popup_bea7776953016a33ca977c340f0fa040.setContent(html_fdd8f6f95dcbefc1e167ddc1f0735140);
+            
+        
+
+        circle_marker_ad59ed6170c2ee71ab1eab8ac495095e.bindPopup(popup_bea7776953016a33ca977c340f0fa040)
+        ;
+
+        
+    
+    
+            circle_marker_ad59ed6170c2ee71ab1eab8ac495095e.bindTooltip(
+                `<div>
+                     <b>Wittstock/Dosse</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_05dbeb48d24bd4113851ac8721a29b69 = L.circleMarker(
+                [60.45138889, 22.26666667],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_ec851257aa2dc19831538efd7db3c7c8 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_52392a0498c1505a7d3713716f45b746 = $(`<div id="html_52392a0498c1505a7d3713716f45b746" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Q11898800</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Abaw</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 633679 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>. Herꝛn Paſtors Diener Axel Kaeg / von der Stadt [Abaw] auß Finland .</i></li></ul>    </div> </div>`)[0];
+                popup_ec851257aa2dc19831538efd7db3c7c8.setContent(html_52392a0498c1505a7d3713716f45b746);
+            
+        
+
+        circle_marker_05dbeb48d24bd4113851ac8721a29b69.bindPopup(popup_ec851257aa2dc19831538efd7db3c7c8)
+        ;
+
+        
+    
+    
+            circle_marker_05dbeb48d24bd4113851ac8721a29b69.bindTooltip(
+                `<div>
+                     <b>Q11898800</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d68b6755b3cab09e32a0146ce223592f = L.circleMarker(
+                [40.833554, 42.820133],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_91f371e0f17e6d6dc5c3deec78b52da5 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_dc3aa8b47058d68e235ec90c39d0ffbf = $(`<div id="html_dc3aa8b47058d68e235ec90c39d0ffbf" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Kura</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Kür</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 305419 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>haͤtten alleine an jhrem Orte zwi- ſchen den beyden Stroͤmen [Kür] vnd Aras im Gebirgen 1000 . Doͤrf- fer / vmb</i></li></ul>    </div> </div>`)[0];
+                popup_91f371e0f17e6d6dc5c3deec78b52da5.setContent(html_dc3aa8b47058d68e235ec90c39d0ffbf);
+            
+        
+
+        circle_marker_d68b6755b3cab09e32a0146ce223592f.bindPopup(popup_91f371e0f17e6d6dc5c3deec78b52da5)
+        ;
+
+        
+    
+    
+            circle_marker_d68b6755b3cab09e32a0146ce223592f.bindTooltip(
+                `<div>
+                     <b>Kura</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b539a74a1554e368a5d8d3348c285df = L.circleMarker(
+                [39.33792, 41.32823],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_ff2db41f2594a189a10b03cc64922a37 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_5b775cdb5089fec6987ae10ef3ef2da5 = $(`<div id="html_5b775cdb5089fec6987ae10ef3ef2da5" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Aras</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Aras</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 143105 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>an jhrem Orte zwi- ſchen den beyden Stroͤmen Kür vnd [Aras] im Gebirgen 1000 . Doͤrf- fer / vmb den Staͤdten</i></li></ul>    </div> </div>`)[0];
+                popup_ff2db41f2594a189a10b03cc64922a37.setContent(html_5b775cdb5089fec6987ae10ef3ef2da5);
+            
+        
+
+        circle_marker_1b539a74a1554e368a5d8d3348c285df.bindPopup(popup_ff2db41f2594a189a10b03cc64922a37)
+        ;
+
+        
+    
+    
+            circle_marker_1b539a74a1554e368a5d8d3348c285df.bindTooltip(
+                `<div>
+                     <b>Aras</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7279fb1713a70f4d6c47ec9f68857bec = L.circleMarker(
+                [21.4225, 39.826111111],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_d19ad5c4804c724bc09c7b8032634f66 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_9d9480e6660d0dff528b479cd9853c3c = $(`<div id="html_9d9480e6660d0dff528b479cd9853c3c" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Mekka</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Mecca</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 104515 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>auch von andern Mahumetiſchen oͤrtern / der Opfferung halber nach [Mecca] eine ſehr groſſe Walfart / vnd muͤſſen der Walbruͤder in</i></li></ul>    </div> </div>`)[0];
+                popup_d19ad5c4804c724bc09c7b8032634f66.setContent(html_9d9480e6660d0dff528b479cd9853c3c);
+            
+        
+
+        circle_marker_7279fb1713a70f4d6c47ec9f68857bec.bindPopup(popup_d19ad5c4804c724bc09c7b8032634f66)
+        ;
+
+        
+    
+    
+            circle_marker_7279fb1713a70f4d6c47ec9f68857bec.bindTooltip(
+                `<div>
+                     <b>Mekka</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cc6462973a66404fd052766bf280bf1d = L.circleMarker(
+                [33.0, 43.0],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_7fe13aaa6f8d0b037a33d136d29e2fd6 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_3f72e2827edfbd9e81df9e50f77ffc25 = $(`<div id="html_3f72e2827edfbd9e81df9e50f77ffc25" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Irak</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>ERAK</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 99237 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>in der Provintz Parthia , oder nach dem heutigen Namen [ERAK] , nicht aber Charaßen , wie man in der newen</i></li></ul>    </div> </div>`)[0];
+                popup_7fe13aaa6f8d0b037a33d136d29e2fd6.setContent(html_3f72e2827edfbd9e81df9e50f77ffc25);
+            
+        
+
+        circle_marker_cc6462973a66404fd052766bf280bf1d.bindPopup(popup_7fe13aaa6f8d0b037a33d136d29e2fd6)
+        ;
+
+        
+    
+    
+            circle_marker_cc6462973a66404fd052766bf280bf1d.bindTooltip(
+                `<div>
+                     <b>Irak</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_be7bbff46b0864601b9ae03622eafb56 = L.circleMarker(
+                [37.4761, 57.3317],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_56ec7ec2c7928e55871451c15aaf38c9 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_d6284215585abb6c70b0ec7da8a897eb = $(`<div id="html_d6284215585abb6c70b0ec7da8a897eb" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Nord-Chorasan</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Charaßen</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 6201376 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>, oder nach dem heutigen Namen ERAK , nicht aber [Charaßen] , wie man in der newen Archontologia Cosmica ſetzen wil</i></li></ul>    </div> </div>`)[0];
+                popup_56ec7ec2c7928e55871451c15aaf38c9.setContent(html_d6284215585abb6c70b0ec7da8a897eb);
+            
+        
+
+        circle_marker_be7bbff46b0864601b9ae03622eafb56.bindPopup(popup_56ec7ec2c7928e55871451c15aaf38c9)
+        ;
+
+        
+    
+    
+            circle_marker_be7bbff46b0864601b9ae03622eafb56.bindTooltip(
+                `<div>
+                     <b>Nord-Chorasan</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3796a16e5057e40940260276bdbca9d1 = L.circleMarker(
+                [36.5656, 53.0588],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_5e6c6c79bfd426d3547ba36fe3fef5fd = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_4dfed0a5e2ad1d9b6d17e6b0d9f83a07 = $(`<div id="html_4dfed0a5e2ad1d9b6d17e6b0d9f83a07" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Mazandaran</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Maſanderan</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 124544 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>W. das Gebirge Demawend , vnd nach N. O. gegen [Maſanderan] den Berg Jeilak Perjan . Sie wird mit den Vor-</i></li></ul>    </div> </div>`)[0];
+                popup_5e6c6c79bfd426d3547ba36fe3fef5fd.setContent(html_4dfed0a5e2ad1d9b6d17e6b0d9f83a07);
+            
+        
+
+        circle_marker_3796a16e5057e40940260276bdbca9d1.bindPopup(popup_5e6c6c79bfd426d3547ba36fe3fef5fd)
+        ;
+
+        
+    
+    
+            circle_marker_3796a16e5057e40940260276bdbca9d1.bindTooltip(
+                `<div>
+                     <b>Mazandaran</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e44801f452bbeaacf3b1c3f7751d05db = L.circleMarker(
+                [32.03, 44.4],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_e7c433cf63135f6b7771ffc329d7c830 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_65997a0f85d9c246db0104311a68199f = $(`<div id="html_65997a0f85d9c246db0104311a68199f" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Kufa</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Kufa</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 99135 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>dem letz- ten jhrer 12. Imam Mehedi , welcher bey [Kufa] in eine Grube ſoll ge- gangen ſeyn / wird /</i></li></ul>    </div> </div>`)[0];
+                popup_e7c433cf63135f6b7771ffc329d7c830.setContent(html_65997a0f85d9c246db0104311a68199f);
+            
+        
+
+        circle_marker_e44801f452bbeaacf3b1c3f7751d05db.bindPopup(popup_e7c433cf63135f6b7771ffc329d7c830)
+        ;
+
+        
+    
+    
+            circle_marker_e44801f452bbeaacf3b1c3f7751d05db.bindTooltip(
+                `<div>
+                     <b>Kufa</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_53fe0f3b75a90826e11a6fe6a0f23d06 = L.circleMarker(
+                [33.544166666, 50.209166666],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_f73057a8ba7984c17d3b814475ea9132 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_7dc5021c991f6539155435427ba8c748 = $(`<div id="html_7dc5021c991f6539155435427ba8c748" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Kūh-e Alvand</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Elwend</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 143747 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>ſo meiſten theil gantz weis / wird in dem Gebirge [Elwend] gebrochen . Es hat Schach Abas der- gleichen Mestzid dem</i></li></ul>    </div> </div>`)[0];
+                popup_f73057a8ba7984c17d3b814475ea9132.setContent(html_7dc5021c991f6539155435427ba8c748);
+            
+        
+
+        circle_marker_53fe0f3b75a90826e11a6fe6a0f23d06.bindPopup(popup_f73057a8ba7984c17d3b814475ea9132)
+        ;
+
+        
+    
+    
+            circle_marker_53fe0f3b75a90826e11a6fe6a0f23d06.bindTooltip(
+                `<div>
+                     <b>Kūh-e Alvand</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e60ef8f449279ce61a458fa36c9e5120 = L.circleMarker(
+                [32.522907, 44.42415],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_1319d0a92690c07ba4c0e9dae83fe943 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_04f9d5ecaf6cf89086f37cda11ef644a = $(`<div id="html_04f9d5ecaf6cf89086f37cda11ef644a" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Babylon</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Babi</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 98228 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>ſchmeuchen ſihet . Den Toback bringen ſie von Bagdad oder [Babi] - lon vnd Kurdeſtan , woſelbſt Er heuffig wachſen ſoll</i></li></ul>    </div> </div>`)[0];
+                popup_1319d0a92690c07ba4c0e9dae83fe943.setContent(html_04f9d5ecaf6cf89086f37cda11ef644a);
+            
+        
+
+        circle_marker_e60ef8f449279ce61a458fa36c9e5120.bindPopup(popup_1319d0a92690c07ba4c0e9dae83fe943)
+        ;
+
+        
+    
+    
+            circle_marker_e60ef8f449279ce61a458fa36c9e5120.bindTooltip(
+                `<div>
+                     <b>Babylon</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f33a054c5a3de6106b14b246ef105041 = L.circleMarker(
+                [37.558513, 43.54980469],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_d34bff2e41a91bdf97b73e2a8f0a687d = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_6f0611987dd60fc216993d51e44a8169 = $(`<div id="html_6f0611987dd60fc216993d51e44a8169" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Kurdistan</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Kurdeſtan</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 126585 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Toback bringen ſie von Bagdad oder Babi - lon vnd [Kurdeſtan] , woſelbſt Er heuffig wachſen ſoll / Sie wiſſen aber</i></li></ul>    </div> </div>`)[0];
+                popup_d34bff2e41a91bdf97b73e2a8f0a687d.setContent(html_6f0611987dd60fc216993d51e44a8169);
+            
+        
+
+        circle_marker_f33a054c5a3de6106b14b246ef105041.bindPopup(popup_d34bff2e41a91bdf97b73e2a8f0a687d)
+        ;
+
+        
+    
+    
+            circle_marker_f33a054c5a3de6106b14b246ef105041.bindTooltip(
+                `<div>
+                     <b>Kurdistan</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3e720fde888b9bb1f599bf9ac5d9c5c = L.circleMarker(
+                [40.633888888, 48.639166666],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_5f0ae0267c7b3a4c7fd718146c70d5f7 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_a88a9f0f11cd528f36ac8fd5c8341e2b = $(`<div id="html_a88a9f0f11cd528f36ac8fd5c8341e2b" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Şamaxı</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Schamachie</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 585156 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>bringen / wenn ich meinen Lehr- Pag. 300. meiſtern zu [Schamachie] / deren oben gedacht worden / ein ſtuͤcklein Fin- gerslang</i></li></ul>    </div> </div>`)[0];
+                popup_5f0ae0267c7b3a4c7fd718146c70d5f7.setContent(html_a88a9f0f11cd528f36ac8fd5c8341e2b);
+            
+        
+
+        circle_marker_f3e720fde888b9bb1f599bf9ac5d9c5c.bindPopup(popup_5f0ae0267c7b3a4c7fd718146c70d5f7)
+        ;
+
+        
+    
+    
+            circle_marker_f3e720fde888b9bb1f599bf9ac5d9c5c.bindTooltip(
+                `<div>
+                     <b>Şamaxı</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6ea40f11d72e171b61e3bb29ccc8d598 = L.circleMarker(
+                [39.774722222, 64.428611111],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_46ea905ec53838523491da17a544d0f1 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_bc1f449e1f4f0b4635721ae865c872ad = $(`<div id="html_bc1f449e1f4f0b4635721ae865c872ad" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Buchara</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Bu</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 1217662 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>dianer / vnterſchiedliche Tartern von Chuareſſem , Chattai , vnd [Bu] - chara , Tuͤrcken / Juden / Armener / Georgianer</i></li></ul>    </div> </div>`)[0];
+                popup_46ea905ec53838523491da17a544d0f1.setContent(html_bc1f449e1f4f0b4635721ae865c872ad);
+            
+        
+
+        circle_marker_6ea40f11d72e171b61e3bb29ccc8d598.bindPopup(popup_46ea905ec53838523491da17a544d0f1)
+        ;
+
+        
+    
+    
+            circle_marker_6ea40f11d72e171b61e3bb29ccc8d598.bindTooltip(
+                `<div>
+                     <b>Buchara</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_75982d4da3df4a6759df14ad62cee3c7 = L.circleMarker(
+                [38.935277777, 45.643055555],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_5c065dc8fa11cbaf34eb274ed74360a9 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_b48bea4033d354b99d617b0a10d5abe4 = $(`<div id="html_b48bea4033d354b99d617b0a10d5abe4" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Dscholfa</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Tzulfa</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 130081 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>oder Tzulfa die Vorſtadt . Vorſtaͤdte . Derer fuͤrnembſten ſeynd [Tzulfa] , welche die groͤſte vnd ſchoͤnſte iſt . Jhre Einwohner</i></li></ul>    </div> </div>`)[0];
+                popup_5c065dc8fa11cbaf34eb274ed74360a9.setContent(html_b48bea4033d354b99d617b0a10d5abe4);
+            
+        
+
+        circle_marker_75982d4da3df4a6759df14ad62cee3c7.bindPopup(popup_5c065dc8fa11cbaf34eb274ed74360a9)
+        ;
+
+        
+    
+    
+            circle_marker_75982d4da3df4a6759df14ad62cee3c7.bindTooltip(
+                `<div>
+                     <b>Dscholfa</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_04c0d2947aa4d2a00fc4d77d2f3133c9 = L.circleMarker(
+                [36.0, 65.0],
+                {"bubblingMouseEvents": true, "color": "#922b21", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1}
+            ).addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+    
+        var popup_3d58cf54dd8bb73ca0b95a384855d472 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_415fbc55bcdc1747962e911470f78046 = $(`<div id="html_415fbc55bcdc1747962e911470f78046" style="width: 100.0%; height: 100.0%;"> <div style='max-width:380px; font-family:Georgia,serif; line-height:1.4;'>   <b style='font-size:1.05em;'>Faryab</b><br>   <span style='color:#555; font-size:0.9em;'>Hist. Schreibweise(n): <i>Ferabat</i></span><br>   <span style='color:#555; font-size:0.85em;'>GeoNames: 1142226 | 1 Erwähnung(en)</span>   <hr style='margin:6px 0;'>   <ul style='padding-left:1.2em; margin:0;'><li style='margin-bottom:5px; font-size:0.85em;'><i>Georgia uͤber 7000 . hinweg ge- nommen / vnd nach [Ferabat] bey aufffuͤhrung etlicher koſtbaren Gebaͤw mit harter Dienſtbarkeit beleget /</i></li></ul>    </div> </div>`)[0];
+                popup_3d58cf54dd8bb73ca0b95a384855d472.setContent(html_415fbc55bcdc1747962e911470f78046);
+            
+        
+
+        circle_marker_04c0d2947aa4d2a00fc4d77d2f3133c9.bindPopup(popup_3d58cf54dd8bb73ca0b95a384855d472)
+        ;
+
+        
+    
+    
+            circle_marker_04c0d2947aa4d2a00fc4d77d2f3133c9.bindTooltip(
+                `<div>
+                     <b>Faryab</b> (1×)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_0f91412a543d02a3ca52949676a635e7.addTo(map_c2dce8d408ee7eaa3c5921002e84d7c8);
+        
+</script>
+</html>
